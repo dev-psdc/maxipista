@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id='neonety.partners_ruc_dv_fields' model='ir.ui.view'>
+			<field name='name'>neonety.partners.ruc.dv.fields</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//field[@name='function']" position='before'>
+					<field name='ruc' style="width:170px!important;" required="1" />
+					<field name='dv' style="width:50px!important;" />
+					<field name='sex'/>
+					<field name='birth_date'/>
+					<field name='age' readonly="1"/>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.operation_notice_number_field' model='ir.ui.view'>
+			<field name='name'>neonety.operation.notice.number.field</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//group[@name='container_row_2']" position='before'>
+					<group>
+						<group>
+							<field name='operation_notice_number'/>
+						</group>
+						<group attrs="{'invisible':[('parent_id','!=','')]}">
+							<field name='neonety_partner_concept_id' options="{'no_create': True}"/>
+						</group>
+					</group>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.nationality_type_partners_fields' model='ir.ui.view'>
+			<field name='name'>neonety.nationality.type.partners.fields</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='account.view_partner_property_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//field[@name='property_account_position_id']" position='after'>
+					<field name='partner_nationality' widget='selection'/>
+					<field name='partner_type' widget='selection'/>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.address_fields' model='ir.ui.view'>
+			<field name='name'>neonety.address.fields</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//div[@class='o_address_format']" position='replace'>
+					<div class="o_address_format">
+						<label for='neonety_country_id' string='País: ' style="font-weight:bold;" />
+						<br />
+						<field name='neonety_country_id' options="{ 'no_create': True, 'no_open': True }" required="1" />
+						<br />
+						<label for='province_id' string='Provincia: ' style="font-weight:bold;" />
+						<br />
+						<field name='province_id' options="{ 'no_create': True, 'no_open': True }" required="1" />
+						<br />
+						<label for='district_id' string='Distrito: ' style="font-weight:bold;" />
+						<br />
+						<field name='district_id' options="{ 'no_create': True, 'no_open': True }" required="1" />
+						<br />
+						<label for='sector_id' string='Corregimiento: ' style="font-weight:bold;" />
+						<br />
+						<field name='sector_id' options="{ 'no_create': True, 'no_open': True }" required="1" />
+						<br />
+					<!--	<label for='region_id' string='Región: ' style="font-weight:bold;" />
+						<br />
+						<field name='region_id' options="{ 'no_create': True, 'no_open': True }"/>
+						<br /> -->
+						<label for='street' string='Lugar: ' style="font-weight:bold;" />
+						<br />
+						<field name='street' required="1" />
+						<field name='street2' invisible='1' />
+						<field name='city' invisible='1' />
+						<field name='zip' invisible='1' />
+						<field name='state_id' invisible='1' />
+						<field name='country_id' invisible='1' />
+					</div>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.address_widget_fields' model='ir.ui.view'>
+			<field name='name'>neonety.address.widget.fields</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//div[@name='div_address']" position='replace'>
+					<div class="o_address_format">
+						<label for='neonety_country_id' string='País: ' style="font-weight:bold;" />
+						<br />
+						<field name='neonety_country_id' options="{ 'no_create': True, 'no_open': True }" />
+						<br />
+						<label for='province_id' string='Provincia: ' style="font-weight:bold;" />
+						<br />
+						<field name='province_id' options="{ 'no_create': True, 'no_open': True }"/>
+						<br />
+						<label for='district_id' string='Distrito: ' style="font-weight:bold;" />
+						<br />
+						<field name='district_id' options="{ 'no_create': True, 'no_open': True }"/>
+						<br />
+						<label for='sector_id' string='Corregimiento: ' style="font-weight:bold;" />
+						<br />
+						<field name='sector_id' options="{ 'no_create': True, 'no_open': True }"/>
+						<br />
+						<label for='street' string='Lugar: ' style="font-weight:bold;" />
+						<br />
+						<field name='street'/>
+						<field name='street2' invisible='1' />
+						<field name='city' invisible='1' />
+						<field name='zip' invisible='1' />
+						<field name='state_id' invisible='1' />
+						<field name='country_id' invisible='1' />
+					</div>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.address_street2_field' model='ir.ui.view'>
+			<field name='name'>neonety.address.street2.field</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//kanban/field[@name='street2']" position='replace'>
+					<field name='street2' invisible='1' />
+					<field name='neonety_country_id'/>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.address_city_field' model='ir.ui.view'>
+			<field name='name'>neonety.address.city.field</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//kanban/field[@name='city']" position='replace'>
+					<field name='city' invisible='1' />
+					<field name='province_id'/>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.address_state_field' model='ir.ui.view'>
+			<field name='name'>neonety.address.state.field</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//kanban/field[@name='state_id']" position='replace'>
+					<field name='state_id' invisible='1' />
+					<field name='district_id'/>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.address_zip_field' model='ir.ui.view'>
+			<field name='name'>neonety.address.zip.field</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//kanban/field[@name='zip']" position='replace'>
+					<field name='zip' invisible='1' />
+					<field name='sector_id'/>
+				</xpath>
+			</field>
+		</record>
+		<record id='neonety.address_country_field' model='ir.ui.view'>
+			<field name='name'>neonety.address.country.field</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='base.view_partner_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//kanban/field[@name='country_id']" position='replace'>
+					<field name='country_id' invisible='1' />
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_neonety_province_manager,neonety.province,model_neonety_province,group_manager,1,1,1,1
+access_neonety_district_manager,neonety.district,model_neonety_district,group_manager,1,1,1,1
+access_neonety_sector_manager,neonety.sector,model_neonety_sector,group_manager,1,1,1,1
+access_neonety_region_manager,neonety.region,model_neonety_region,group_manager,1,1,1,1
+access_neonety_partner_concept,neonety.partner.concept,model_neonety_partner_concept,group_manager,1,1,1,1
+access_neonety_province_all,neonety.province,model_neonety_province,,1,1,0,0
+access_neonety_district_all,neonety.district,model_neonety_district,,1,1,0,0
+access_neonety_sector_all,neonety.sector,model_neonety_sector,,1,1,0,0
+access_neonety_region_all,neonety.region,model_neonety_region,,1,1,0,0

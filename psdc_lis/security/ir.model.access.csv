@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lis_request_base_user,psdc_lis.request user,model_lis_request,base.group_user,1,1,1,1
+access_lis_request_user,psdc_lis.request user,model_lis_request,group_psdc_lis_user,1,1,1,0
+access_lis_request_sale,psdc_lis.request sale,model_lis_request,group_psdc_lis_sale,1,1,1,0
+access_lis_request_administrative,psdc_lis.request administrative,model_lis_request,group_psdc_lis_administrative,1,1,1,1
+access_lis_request_laboratory,psdc_lis.request laboratory,model_lis_request,group_psdc_lis_laboratory,1,1,1,1

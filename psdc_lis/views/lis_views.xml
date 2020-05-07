@@ -1,0 +1,35 @@
+<odoo>
+  <data>
+
+    <!-- Menu LIS Root -->
+    <menuitem name="Laboratory"
+              id="menu_lis_root"
+              sequence="10"
+              web_icon="psdc_lis,static/description/icon.png"
+    />
+
+    <!-- Menu Patients -->
+    <menuitem name="Patients"
+              id="lis_patient_menu"
+              parent="menu_lis_root"
+              sequence="1"
+              action="lis_patients_action"
+    />
+
+    <!-- Menu Request -->
+    <menuitem name="Requests"
+              id="lis_requests_menu"
+              parent="menu_lis_root"
+              sequence="2"
+              action="lis_requests_action"
+    />
+
+    <!-- Menu Configuration -->
+    <menuitem name="Configuration"
+              id="lis_config_menu"
+              parent="menu_lis_root"
+              sequence="100"
+    />
+
+  </data>
+</odoo>

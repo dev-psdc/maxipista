@@ -1,0 +1,3966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record model='neonety.province'   id='neonety.province_1'>
+			<field name='name'>Bocas del Toro</field>
+			<field name='code'>1</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_2'>
+			<field name='name'>Coclé</field>
+			<field name='code'>2</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_3'>
+			<field name='name'>Colón</field>
+			<field name='code'>3</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_4'>
+			<field name='name'>Chiriquí</field>
+			<field name='code'>4</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_5'>
+			<field name='name'>Darién</field>
+			<field name='code'>5</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_6'>
+			<field name='name'>Herrera</field>
+			<field name='code'>6</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_7'>
+			<field name='name'>Los Santos</field>
+			<field name='code'>7</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_8'>
+			<field name='name'>Panamá Centro</field>
+			<field name='code'>8</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_9'>
+			<field name='name'>Provincia de Veraguas</field>
+			<field name='code'>9</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_10'>
+			<field name='name'>Panamá Oeste</field>
+			<field name='code'>10</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_11'>
+			<field name='name'>Panamá San Miguelito</field>
+			<field name='code'>11</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_12'>
+			<field name='name'>Panamá Norte</field>
+			<field name='code'>12</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_13'>
+			<field name='name'>Panamá Este</field>
+			<field name='code'>13</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_14'>
+			<field name='name'>Emberá-Wounaan</field>
+			<field name='code'>14</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_15'>
+			<field name='name'>Guna Yala</field>
+			<field name='code'>15</field>
+		</record>
+		<record model='neonety.province'   id='neonety.province_16'>
+			<field name='name'>Ngäbe-Buglé</field>
+			<field name='code'>16</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_1'>
+			<field name='name'>Almirante</field>
+			<field name='code'>1</field>
+			<field name='province_id'>1</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_2'>
+			<field name='name'>Bocas del Toro</field>
+			<field name='code'>2</field>
+			<field name='province_id'>1</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_3'>
+			<field name='name'>Changuinola</field>
+			<field name='code'>3</field>
+			<field name='province_id'>1</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_4'>
+			<field name='name'>Chiriquí Grande</field>
+			<field name='code'>4</field>
+			<field name='province_id'>1</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_5'>
+			<field name='name'>Alanje</field>
+			<field name='code'>5</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_6'>
+			<field name='name'>Barú</field>
+			<field name='code'>6</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_7'>
+			<field name='name'>Boquerón</field>
+			<field name='code'>7</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_8'>
+			<field name='name'>Boquete</field>
+			<field name='code'>8</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_9'>
+			<field name='name'>Bugaba</field>
+			<field name='code'>9</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_10'>
+			<field name='name'>David</field>
+			<field name='code'>10</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_11'>
+			<field name='name'>Dolega</field>
+			<field name='code'>11</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_12'>
+			<field name='name'>Gualaca</field>
+			<field name='code'>12</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_13'>
+			<field name='name'>Remedios</field>
+			<field name='code'>13</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_14'>
+			<field name='name'>Renacimiento</field>
+			<field name='code'>14</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_15'>
+			<field name='name'>San Felix</field>
+			<field name='code'>15</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_16'>
+			<field name='name'>San Lorenzo</field>
+			<field name='code'>16</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_17'>
+			<field name='name'>Tolé</field>
+			<field name='code'>17</field>
+			<field name='province_id'>4</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_18'>
+			<field name='name'>Aguadulce</field>
+			<field name='code'>18</field>
+			<field name='province_id'>2</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_19'>
+			<field name='name'>Antón</field>
+			<field name='code'>19</field>
+			<field name='province_id'>2</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_20'>
+			<field name='name'>La Pintada</field>
+			<field name='code'>20</field>
+			<field name='province_id'>2</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_21'>
+			<field name='name'>Natá</field>
+			<field name='code'>21</field>
+			<field name='province_id'>2</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_22'>
+			<field name='name'>Olá</field>
+			<field name='code'>22</field>
+			<field name='province_id'>2</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_23'>
+			<field name='name'>Penonomé</field>
+			<field name='code'>23</field>
+			<field name='province_id'>2</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_24'>
+			<field name='name'>Colón</field>
+			<field name='code'>24</field>
+			<field name='province_id'>3</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_25'>
+			<field name='name'>Chagres</field>
+			<field name='code'>25</field>
+			<field name='province_id'>3</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_26'>
+			<field name='name'>Donoso</field>
+			<field name='code'>26</field>
+			<field name='province_id'>3</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_27'>
+			<field name='name'>Portobelo</field>
+			<field name='code'>27</field>
+			<field name='province_id'>3</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_28'>
+			<field name='name'>Santa Isabel</field>
+			<field name='code'>28</field>
+			<field name='province_id'>3</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_29'>
+			<field name='name'>Chepigana</field>
+			<field name='code'>29</field>
+			<field name='province_id'>5</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_30'>
+			<field name='name'>Pinogana</field>
+			<field name='code'>30</field>
+			<field name='province_id'>5</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_31'>
+			<field name='name'>Chitré</field>
+			<field name='code'>31</field>
+			<field name='province_id'>6</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_32'>
+			<field name='name'>Las Minas</field>
+			<field name='code'>32</field>
+			<field name='province_id'>6</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_33'>
+			<field name='name'>Los Pozos</field>
+			<field name='code'>33</field>
+			<field name='province_id'>6</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_34'>
+			<field name='name'>Ocú</field>
+			<field name='code'>34</field>
+			<field name='province_id'>6</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_35'>
+			<field name='name'>Parita</field>
+			<field name='code'>35</field>
+			<field name='province_id'>6</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_36'>
+			<field name='name'>Pesé</field>
+			<field name='code'>36</field>
+			<field name='province_id'>6</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_37'>
+			<field name='name'>Santa María</field>
+			<field name='code'>37</field>
+			<field name='province_id'>6</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_38'>
+			<field name='name'>Guararé</field>
+			<field name='code'>38</field>
+			<field name='province_id'>7</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_39'>
+			<field name='name'>Las tablas</field>
+			<field name='code'>39</field>
+			<field name='province_id'>7</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_40'>
+			<field name='name'>Los Santos</field>
+			<field name='code'>40</field>
+			<field name='province_id'>7</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_41'>
+			<field name='name'>Macaracas</field>
+			<field name='code'>41</field>
+			<field name='province_id'>7</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_42'>
+			<field name='name'>Pedasí</field>
+			<field name='code'>42</field>
+			<field name='province_id'>7</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_43'>
+			<field name='name'>Pocrí</field>
+			<field name='code'>43</field>
+			<field name='province_id'>7</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_44'>
+			<field name='name'>Tonosí</field>
+			<field name='code'>44</field>
+			<field name='province_id'>7</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_45'>
+			<field name='name'>Balboa</field>
+			<field name='code'>45</field>
+			<field name='province_id'>8</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_46'>
+			<field name='name'>Chepo</field>
+			<field name='code'>46</field>
+			<field name='province_id'>8</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_47'>
+			<field name='name'>Chimán</field>
+			<field name='code'>47</field>
+			<field name='province_id'>8</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_48'>
+			<field name='name'>Panamá</field>
+			<field name='code'>48</field>
+			<field name='province_id'>8</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_49'>
+			<field name='name'>San Miguelito</field>
+			<field name='code'>49</field>
+			<field name='province_id'>8</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_50'>
+			<field name='name'>Taboga</field>
+			<field name='code'>50</field>
+			<field name='province_id'>8</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_51'>
+			<field name='name'>Arraijan</field>
+			<field name='code'>51</field>
+			<field name='province_id'>10</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_52'>
+			<field name='name'>Capira</field>
+			<field name='code'>52</field>
+			<field name='province_id'>10</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_53'>
+			<field name='name'>Chame</field>
+			<field name='code'>53</field>
+			<field name='province_id'>10</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_54'>
+			<field name='name'>La Chorrera</field>
+			<field name='code'>54</field>
+			<field name='province_id'>10</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_55'>
+			<field name='name'>San Carlos</field>
+			<field name='code'>55</field>
+			<field name='province_id'>10</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_56'>
+			<field name='name'>Atalaya</field>
+			<field name='code'>56</field>
+			<field name='province_id'>10</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_57'>
+			<field name='name'>Calobre</field>
+			<field name='code'>57</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_58'>
+			<field name='name'>Cañazas</field>
+			<field name='code'>58</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_59'>
+			<field name='name'>La Mesa</field>
+			<field name='code'>59</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_60'>
+			<field name='name'>Las Palmas</field>
+			<field name='code'>60</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_61'>
+			<field name='name'>Mariato</field>
+			<field name='code'>61</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_62'>
+			<field name='name'>Montijo</field>
+			<field name='code'>62</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_63'>
+			<field name='name'>Rio de Jesús</field>
+			<field name='code'>63</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_64'>
+			<field name='name'>San Francisco</field>
+			<field name='code'>64</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_65'>
+			<field name='name'>Santa Fé</field>
+			<field name='code'>65</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_66'>
+			<field name='name'>Santiago</field>
+			<field name='code'>66</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.district'   id='neonety.district_67'>
+			<field name='name'>Soná</field>
+			<field name='code'>67</field>
+			<field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_1'>
+			<field name='name'>Puerto Almirante</field>
+			<field name='code'>1</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>1</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_2'>
+			<field name='name'>Barriada Guaymí</field>
+			<field name='code'>2</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>1</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_3'>
+			<field name='name'>Barrio Francés</field>
+			<field name='code'>3</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>1</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_4'>
+			<field name='name'>Nance de Riscó</field>
+			<field name='code'>4</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>1</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_5'>
+			<field name='name'>Valle de Aguas Arriba</field>
+			<field name='code'>5</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>1</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_6'>
+			<field name='name'>Valle de Riscó</field>
+			<field name='code'>6</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>1</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_7'>
+			<field name='name'>Bastimentos</field>
+			<field name='code'>7</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>2</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_8'>
+			<field name='name'>Bocas del Toro</field>
+			<field name='code'>8</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>2</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_9'>
+			<field name='name'>Cauchero</field>
+			<field name='code'>9</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>2</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_10'>
+			<field name='name'>Punta Laurel</field>
+			<field name='code'>10</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>2</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_11'>
+			<field name='name'>Tierra Oscura</field>
+			<field name='code'>11</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>2</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_12'>
+			<field name='name'>Changuinola</field>
+			<field name='code'>12</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_13'>
+			<field name='name'>Cochigro</field>
+			<field name='code'>13</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_14'>
+			<field name='name'>El Empalme</field>
+			<field name='code'>14</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_15'>
+			<field name='name'>Guabito</field>
+			<field name='code'>15</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_16'>
+			<field name='name'>La Gloria</field>
+			<field name='code'>16</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_17'>
+			<field name='name'>Las Delicias</field>
+			<field name='code'>17</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_18'>
+			<field name='name'>Las Tablas</field>
+			<field name='code'>18</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_19'>
+			<field name='name'>Barriada 4 de Abril</field>
+			<field name='code'>19</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_20'>
+			<field name='name'>El Teribe</field>
+			<field name='code'>20</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_21'>
+			<field name='name'>Finca 30</field>
+			<field name='code'>21</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_22'>
+			<field name='name'>Finca 60</field>
+			<field name='code'>22</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_23'>
+			<field name='name'>Finca 6</field>
+			<field name='code'>23</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_24'>
+			<field name='name'>El Silencio</field>
+			<field name='code'>24</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>3</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_25'>
+			<field name='name'>Bajo Cedro</field>
+			<field name='code'>25</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>4</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_26'>
+			<field name='name'>Chiriquí Grande</field>
+			<field name='code'>26</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>4</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_27'>
+			<field name='name'>Miramar</field>
+			<field name='code'>27</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>4</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_28'>
+			<field name='name'>Punta Peña</field>
+			<field name='code'>28</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>4</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_29'>
+			<field name='name'>Punta Robalo</field>
+			<field name='code'>29</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>4</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_30'>
+			<field name='name'>Rambala</field>
+			<field name='code'>30</field>
+			<field name='province_id'>1</field>
+			<field name='district_id'>4</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_31'>
+			<field name='name'>Santiago de Alanje</field>
+			<field name='code'>31</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_32'>
+			<field name='name'>Divalá</field>
+			<field name='code'>32</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_33'>
+			<field name='name'>Canta Gallo</field>
+			<field name='code'>33</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_34'>
+			<field name='name'>El Tejar</field>
+			<field name='code'>34</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_35'>
+			<field name='name'>Guarumal</field>
+			<field name='code'>35</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_36'>
+			<field name='name'>Nuevo México</field>
+			<field name='code'>36</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_37'>
+			<field name='name'>Querévalo</field>
+			<field name='code'>37</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_38'>
+			<field name='name'>Palo Grande</field>
+			<field name='code'>38</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_39'>
+			<field name='name'>Santo Tomás</field>
+			<field name='code'>39</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>5</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_40'>
+			<field name='name'>Baco</field>
+			<field name='code'>40</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_41'>
+			<field name='name'>Limones</field>
+			<field name='code'>41</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_42'>
+			<field name='name'>Progreso</field>
+			<field name='code'>42</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_43'>
+			<field name='name'>Puerto Tomás Armuelles</field>
+			<field name='code'>43</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_44'>
+			<field name='name'>Rodolfo Aguilar Delgado</field>
+			<field name='code'>44</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_45'>
+			<field name='name'>Bágala</field>
+			<field name='code'>45</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_46'>
+			<field name='name'>Boquerón</field>
+			<field name='code'>46</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_47'>
+			<field name='name'>Cordillera</field>
+			<field name='code'>47</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_48'>
+			<field name='name'>Guabal</field>
+			<field name='code'>48</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_49'>
+			<field name='name'>Guayabal</field>
+			<field name='code'>49</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_50'>
+			<field name='name'>Paraíso</field>
+			<field name='code'>50</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_51'>
+			<field name='name'>Pedregal</field>
+			<field name='code'>51</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_52'>
+			<field name='name'>Tijeras</field>
+			<field name='code'>52</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_53'>
+			<field name='name'>Alto Boquete</field>
+			<field name='code'>53</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_54'>
+			<field name='name'>Bajo Boquete</field>
+			<field name='code'>54</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_55'>
+			<field name='name'>Caldera</field>
+			<field name='code'>55</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_56'>
+			<field name='name'>Jaramillo</field>
+			<field name='code'>56</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_57'>
+			<field name='name'>Los Naranjos</field>
+			<field name='code'>57</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_58'>
+			<field name='name'>Palmira</field>
+			<field name='code'>58</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_59'>
+			<field name='name'>Aserrío de Gariché</field>
+			<field name='code'>59</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_60'>
+			<field name='name'>Bugaba</field>
+			<field name='code'>60</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_61'>
+			<field name='name'>Cerro Punta</field>
+			<field name='code'>61</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_62'>
+			<field name='name'>El Bongo</field>
+			<field name='code'>62</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_63'>
+			<field name='name'>Gómez</field>
+			<field name='code'>63</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_64'>
+			<field name='name'>La Concepción</field>
+			<field name='code'>64</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_65'>
+			<field name='name'>La Estrella</field>
+			<field name='code'>65</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_66'>
+			<field name='name'>San Andrés</field>
+			<field name='code'>66</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_67'>
+			<field name='name'>Santa Marta</field>
+			<field name='code'>67</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_68'>
+			<field name='name'>Santa Rosa</field>
+			<field name='code'>68</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_69'>
+			<field name='name'>Santo Domingo</field>
+			<field name='code'>69</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_70'>
+			<field name='name'>Sortová</field>
+			<field name='code'>70</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_71'>
+			<field name='name'>Volcán</field>
+			<field name='code'>71</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_72'>
+			<field name='name'>Bijagual</field>
+			<field name='code'>72</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_73'>
+			<field name='name'>Cochea</field>
+			<field name='code'>73</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_74'>
+			<field name='name'>Chiriquí</field>
+			<field name='code'>74</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_75'>
+			<field name='name'>Guacá</field>
+			<field name='code'>75</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_76'>
+			<field name='name'>Las Lomas</field>
+			<field name='code'>76</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_77'>
+			<field name='name'>Pedregal</field>
+			<field name='code'>77</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_78'>
+			<field name='name'>San Carlos</field>
+			<field name='code'>78</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_79'>
+			<field name='name'>San José de David</field>
+			<field name='code'>79</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_80'>
+			<field name='name'>San Pablo Nuevo</field>
+			<field name='code'>80</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_81'>
+			<field name='name'>San Pablo Viejo</field>
+			<field name='code'>81</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_82'>
+			<field name='name'>San Francisco de Dolega</field>
+			<field name='code'>82</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_83'>
+			<field name='name'>Dos Ríos</field>
+			<field name='code'>83</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_84'>
+			<field name='name'>Los Algarrobos</field>
+			<field name='code'>84</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_85'>
+			<field name='name'>Los Anastacios</field>
+			<field name='code'>85</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_86'>
+			<field name='name'>Potrerillos</field>
+			<field name='code'>86</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_87'>
+			<field name='name'>Potrerillos Abajo</field>
+			<field name='code'>87</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_88'>
+			<field name='name'>Rovira</field>
+			<field name='code'>88</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_89'>
+			<field name='name'>Tinajas</field>
+			<field name='code'>89</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>11</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_90'>
+			<field name='name'>Gualaca</field>
+			<field name='code'>90</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>12</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_91'>
+			<field name='name'>Hornito</field>
+			<field name='code'>91</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>12</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_92'>
+			<field name='name'>Los Angeles</field>
+			<field name='code'>92</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>12</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_93'>
+			<field name='name'>Paja de Sombrero</field>
+			<field name='code'>93</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>12</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_94'>
+			<field name='name'>Rincón</field>
+			<field name='code'>94</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>12</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_95'>
+			<field name='name'>El Nancito</field>
+			<field name='code'>95</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>13</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_96'>
+			<field name='name'>El Porvenir</field>
+			<field name='code'>96</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>13</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_97'>
+			<field name='name'>El Puerto</field>
+			<field name='code'>97</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>13</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_98'>
+			<field name='name'>Nuestra Señora de los Remedios</field>
+			<field name='code'>98</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>13</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_99'>
+			<field name='name'>Santa Lucía</field>
+			<field name='code'>99</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>13</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_100'>
+			<field name='name'>Breñón</field>
+			<field name='code'>100</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_101'>
+			<field name='name'>Cañas Gordas</field>
+			<field name='code'>101</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_102'>
+			<field name='name'>Dominical</field>
+			<field name='code'>102</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_103'>
+			<field name='name'>Monte Lirio</field>
+			<field name='code'>103</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_104'>
+			<field name='name'>Plaza de Caisán</field>
+			<field name='code'>104</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_105'>
+			<field name='name'>Río Sereno</field>
+			<field name='code'>105</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_106'>
+			<field name='name'>Santa Cruz</field>
+			<field name='code'>106</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_107'>
+			<field name='name'>Santa Clara</field>
+			<field name='code'>107</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>14</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_108'>
+			<field name='name'>Las Lajas</field>
+			<field name='code'>108</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>15</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_109'>
+			<field name='name'>Lajas Adentro</field>
+			<field name='code'>109</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>15</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_110'>
+			<field name='name'>Juay</field>
+			<field name='code'>110</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>15</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_111'>
+			<field name='name'>San Félix</field>
+			<field name='code'>111</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>15</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_112'>
+			<field name='name'>Santa Cruz</field>
+			<field name='code'>112</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>15</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_113'>
+			<field name='name'>Boca Chica</field>
+			<field name='code'>113</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>16</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_114'>
+			<field name='name'>Boca del Monte</field>
+			<field name='code'>114</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>16</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_115'>
+			<field name='name'>Horconcitos</field>
+			<field name='code'>115</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>16</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_116'>
+			<field name='name'>San Juan</field>
+			<field name='code'>116</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>16</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_117'>
+			<field name='name'>San Lorenzo</field>
+			<field name='code'>117</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>16</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_118'>
+			<field name='name'>Bella Vista</field>
+			<field name='code'>118</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_119'>
+			<field name='name'>Cerro Viejo</field>
+			<field name='code'>119</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_120'>
+			<field name='name'>El Cristo</field>
+			<field name='code'>120</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_121'>
+			<field name='name'>Justo Fidel Palacios</field>
+			<field name='code'>121</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_122'>
+			<field name='name'>Lajas de Tolé</field>
+			<field name='code'>122</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_123'>
+			<field name='name'>Potrero de Caña</field>
+			<field name='code'>123</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_124'>
+			<field name='name'>Quebrada de Piedra</field>
+			<field name='code'>124</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_125'>
+			<field name='name'>Tolé</field>
+			<field name='code'>125</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_126'>
+			<field name='name'>Veladero</field>
+			<field name='code'>126</field>
+			<field name='province_id'>4</field>
+			<field name='district_id'>17</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_127'>
+			<field name='name'>San Juan Bautista de Aguadulce</field>
+			<field name='code'>127</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>18</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_128'>
+			<field name='name'>Barrios Unidos</field>
+			<field name='code'>128</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>18</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_129'>
+			<field name='name'>El Cristo</field>
+			<field name='code'>129</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>18</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_130'>
+			<field name='name'>El Roble</field>
+			<field name='code'>130</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>18</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_131'>
+			<field name='name'>Pocrí</field>
+			<field name='code'>131</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>18</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_132'>
+			<field name='name'>Antón</field>
+			<field name='code'>132</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_133'>
+			<field name='name'>Caballero</field>
+			<field name='code'>133</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_134'>
+			<field name='name'>Cabuya</field>
+			<field name='code'>134</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_135'>
+			<field name='name'>El Chirú</field>
+			<field name='code'>135</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_136'>
+			<field name='name'>El Retiro</field>
+			<field name='code'>137</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_137'>
+			<field name='name'>El Valle</field>
+			<field name='code'>137</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_138'>
+			<field name='name'>Juan Díaz</field>
+			<field name='code'>138</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_139'>
+			<field name='name'>Río Hato</field>
+			<field name='code'>139</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_140'>
+			<field name='name'>San Juan de Dios</field>
+			<field name='code'>140</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_141'>
+			<field name='name'>Santa Rita</field>
+			<field name='code'>141</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>19</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_142'>
+			<field name='name'>El Harino</field>
+			<field name='code'>142</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>20</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_143'>
+			<field name='name'>El Potrero</field>
+			<field name='code'>143</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>20</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_144'>
+			<field name='name'>La Pintada</field>
+			<field name='code'>144</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>20</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_145'>
+			<field name='name'>Las Lomas</field>
+			<field name='code'>145</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>20</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_146'>
+			<field name='name'>Llano Grande</field>
+			<field name='code'>146</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>20</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_147'>
+			<field name='name'>Piedras Gordas</field>
+			<field name='code'>147</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>20</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_148'>
+			<field name='name'>Llano Norte</field>
+			<field name='code'>148</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>20</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_149'>
+			<field name='name'>Capellanía</field>
+			<field name='code'>149</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>21</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_150'>
+			<field name='name'>El Caño</field>
+			<field name='code'>150</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>21</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_151'>
+			<field name='name'>Guzmán</field>
+			<field name='code'>151</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>21</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_152'>
+			<field name='name'>Las Huacas</field>
+			<field name='code'>152</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>21</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_153'>
+			<field name='name'>Natá</field>
+			<field name='code'>153</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>21</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_154'>
+			<field name='name'>Toza</field>
+			<field name='code'>154</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>21</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_155'>
+			<field name='name'>El Copé</field>
+			<field name='code'>155</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>22</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_156'>
+			<field name='name'>El Palmar</field>
+			<field name='code'>156</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>22</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_157'>
+			<field name='name'>El Picacho</field>
+			<field name='code'>157</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>22</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_158'>
+			<field name='name'>La Pava</field>
+			<field name='code'>158</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>22</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_159'>
+			<field name='name'>Olá</field>
+			<field name='code'>159</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>22</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_160'>
+			<field name='name'>Cañaveral</field>
+			<field name='code'>160</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_161'>
+			<field name='name'>Coclé</field>
+			<field name='code'>161</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_162'>
+			<field name='name'>Chiguirí Arriba</field>
+			<field name='code'>162</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_163'>
+			<field name='name'>El Coco</field>
+			<field name='code'>163</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_164'>
+			<field name='name'>El Valle de San Miguel</field>
+			<field name='code'>164</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_165'>
+			<field name='name'>Pajonal</field>
+			<field name='code'>165</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_166'>
+			<field name='name'>Penonomé</field>
+			<field name='code'>166</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_167'>
+			<field name='name'>Río Grande</field>
+			<field name='code'>167</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_168'>
+			<field name='name'>Río Indio</field>
+			<field name='code'>168</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_169'>
+			<field name='name'>Toabré</field>
+			<field name='code'>169</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_170'>
+			<field name='name'>Tulú</field>
+			<field name='code'>170</field>
+			<field name='province_id'>2</field>
+			<field name='district_id'>23</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_171'>
+			<field name='name'>Barrio Norte</field>
+			<field name='code'>171</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_172'>
+			<field name='name'>Barrio Sur</field>
+			<field name='code'>172</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_173'>
+			<field name='name'>Buena Vista</field>
+			<field name='code'>173</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_174'>
+			<field name='name'>Cativá</field>
+			<field name='code'>174</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_175'>
+			<field name='name'>Ciricito</field>
+			<field name='code'>175</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_176'>
+			<field name='name'>Cristóbal</field>
+			<field name='code'>176</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_177'>
+			<field name='name'>Escobal</field>
+			<field name='code'>177</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_178'>
+			<field name='name'>Limón</field>
+			<field name='code'>178</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_179'>
+			<field name='name'>Nueva Providencia</field>
+			<field name='code'>179</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_180'>
+			<field name='name'>Puerto Pilón</field>
+			<field name='code'>180</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_181'>
+			<field name='name'>Sabanitas</field>
+			<field name='code'>181</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_182'>
+			<field name='name'>Salamanca</field>
+			<field name='code'>182</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_183'>
+			<field name='name'>San Juan</field>
+			<field name='code'>183</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_184'>
+			<field name='name'>Santa Rosa</field>
+			<field name='code'>184</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>24</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_185'>
+			<field name='name'>Achiote</field>
+			<field name='code'>185</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>25</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_186'>
+			<field name='name'>El Guabo</field>
+			<field name='code'>186</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>25</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_187'>
+			<field name='name'>La Encantada</field>
+			<field name='code'>187</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>25</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_188'>
+			<field name='name'>Nuevo Chagres</field>
+			<field name='code'>188</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>25</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_189'>
+			<field name='name'>Palmas Bellas</field>
+			<field name='code'>189</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>25</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_190'>
+			<field name='name'>Piña</field>
+			<field name='code'>190</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>25</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_191'>
+			<field name='name'>Salud</field>
+			<field name='code'>191</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>25</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_192'>
+			<field name='name'>Coclé del Norte</field>
+			<field name='code'>192</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>26</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_193'>
+			<field name='name'>El Guásimo</field>
+			<field name='code'>193</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>26</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_194'>
+			<field name='name'>Gobea</field>
+			<field name='code'>194</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>26</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_195'>
+			<field name='name'>Miguel de la Borda</field>
+			<field name='code'>195</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>26</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_196'>
+			<field name='name'>Río Indio</field>
+			<field name='code'>196</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>26</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_197'>
+			<field name='name'>San José del General</field>
+			<field name='code'>197</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>26</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_198'>
+			<field name='name'>Cacique</field>
+			<field name='code'>198</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>27</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_199'>
+			<field name='name'>Garrote</field>
+			<field name='code'>199</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>27</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_200'>
+			<field name='name'>Isla Grande</field>
+			<field name='code'>200</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>27</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_201'>
+			<field name='name'>María Chiquita</field>
+			<field name='code'>201</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>27</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_202'>
+			<field name='name'>San Felipe de Portobelo</field>
+			<field name='code'>202</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>27</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_203'>
+			<field name='name'>Cuango</field>
+			<field name='code'>203</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_204'>
+			<field name='name'>Miramar</field>
+			<field name='code'>204</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_205'>
+			<field name='name'>Nombre de Dios</field>
+			<field name='code'>205</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_206'>
+			<field name='name'>Palenque</field>
+			<field name='code'>206</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_207'>
+			<field name='name'>Palmira</field>
+			<field name='code'>207</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_208'>
+			<field name='name'>Playa Chiquita</field>
+			<field name='code'>208</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_209'>
+			<field name='name'>Santa Isabel</field>
+			<field name='code'>209</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_210'>
+			<field name='name'>Viento Frío</field>
+			<field name='code'>210</field>
+			<field name='province_id'>3</field>
+			<field name='district_id'>28</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_211'>
+			<field name='name'>Agua Fría</field>
+			<field name='code'>211</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_212'>
+			<field name='name'>Camogantí</field>
+			<field name='code'>212</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_213'>
+			<field name='name'>Chepigana</field>
+			<field name='code'>213</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_214'>
+			<field name='name'>Cucunatí</field>
+			<field name='code'>214</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_215'>
+			<field name='name'>Garachiné</field>
+			<field name='code'>215</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_216'>
+			<field name='name'>Jaqué</field>
+			<field name='code'>216</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_217'>
+			<field name='name'>La Palma</field>
+			<field name='code'>217</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_218'>
+			<field name='name'>Puerto Piña</field>
+			<field name='code'>218</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_219'>
+			<field name='name'>Río Congo</field>
+			<field name='code'>219</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_220'>
+			<field name='name'>Río Congo Arriba</field>
+			<field name='code'>220</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_221'>
+			<field name='name'>Río Iglesias</field>
+			<field name='code'>221</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_222'>
+			<field name='name'>Sambú</field>
+			<field name='code'>222</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_223'>
+			<field name='name'>Setegantí</field>
+			<field name='code'>223</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_224'>
+			<field name='name'>Santa Fe</field>
+			<field name='code'>224</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_225'>
+			<field name='name'>Taimatí</field>
+			<field name='code'>225</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_226'>
+			<field name='name'>Tucutí</field>
+			<field name='code'>226</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>29</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_227'>
+			<field name='name'>Boca de Cupe</field>
+			<field name='code'>227</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_228'>
+			<field name='name'>El Real de Santa María</field>
+			<field name='code'>228</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_229'>
+			<field name='name'>Metetí</field>
+			<field name='code'>229</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_230'>
+			<field name='name'>Paya</field>
+			<field name='code'>230</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_231'>
+			<field name='name'>Pinogana</field>
+			<field name='code'>231</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_232'>
+			<field name='name'>Púcuro</field>
+			<field name='code'>232</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_233'>
+			<field name='name'>Yape</field>
+			<field name='code'>233</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_234'>
+			<field name='name'>Yaviza</field>
+			<field name='code'>234</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_235'>
+			<field name='name'>Wargandí</field>
+			<field name='code'>235</field>
+			<field name='province_id'>5</field>
+			<field name='district_id'>30</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_236'>
+			<field name='name'>Chitré</field>
+			<field name='code'>236</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>31</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_237'>
+			<field name='name'>La Arena</field>
+			<field name='code'>237</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>31</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_238'>
+			<field name='name'>Llano Bonito</field>
+			<field name='code'>238</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>31</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_239'>
+			<field name='name'>San Juan Bautista.</field>
+			<field name='code'>239</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>31</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_240'>
+			<field name='name'>San Miguel de Monagrillo</field>
+			<field name='code'>240</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>31</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_241'>
+			<field name='name'>Chepo</field>
+			<field name='code'>241</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>32</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_242'>
+			<field name='name'>Chumical</field>
+			<field name='code'>242</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>32</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_243'>
+			<field name='name'>El Toro</field>
+			<field name='code'>243</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>32</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_244'>
+			<field name='name'>Las Minas</field>
+			<field name='code'>244</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>32</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_245'>
+			<field name='name'>Leones</field>
+			<field name='code'>245</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>32</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_246'>
+			<field name='name'>Quebrada del Rosario</field>
+			<field name='code'>246</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>32</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_247'>
+			<field name='name'>Quebrada El Ciprián</field>
+			<field name='code'>247</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>32</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_248'>
+			<field name='name'>El Capurí</field>
+			<field name='code'>248</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_249'>
+			<field name='name'>El Calabacito</field>
+			<field name='code'>249</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_250'>
+			<field name='name'>El Cedro</field>
+			<field name='code'>250</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_251'>
+			<field name='name'>La Arena</field>
+			<field name='code'>251</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_252'>
+			<field name='name'>La Pitaloza</field>
+			<field name='code'>252</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_253'>
+			<field name='name'>Las Llanas</field>
+			<field name='code'>253</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_254'>
+			<field name='name'>Los Cerritos</field>
+			<field name='code'>254</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_255'>
+			<field name='name'>Los Cerros de Paja</field>
+			<field name='code'>255</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_256'>
+			<field name='name'>Los Pozos</field>
+			<field name='code'>256</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>33</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_257'>
+			<field name='name'>Cerro Largo</field>
+			<field name='code'>257</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_258'>
+			<field name='name'>El Tijera</field>
+			<field name='code'>258</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_259'>
+			<field name='name'>Entradero del Castillo</field>
+			<field name='code'>259</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_260'>
+			<field name='name'>Los Llanos</field>
+			<field name='code'>260</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_261'>
+			<field name='name'>Llano Grande</field>
+			<field name='code'>261</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_262'>
+			<field name='name'>Menchaca</field>
+			<field name='code'>262</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_263'>
+			<field name='name'>Peñas Chatas</field>
+			<field name='code'>263</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_264'>
+			<field name='name'>San Sebastián de Ocú</field>
+			<field name='code'>264</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>34</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_265'>
+			<field name='name'>Cabuya</field>
+			<field name='code'>265</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>35</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_266'>
+			<field name='name'>Los Castillos</field>
+			<field name='code'>266</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>35</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_267'>
+			<field name='name'>Llano de la Cruz</field>
+			<field name='code'>267</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>35</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_268'>
+			<field name='name'>París</field>
+			<field name='code'>268</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>35</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_269'>
+			<field name='name'>Parita</field>
+			<field name='code'>269</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>35</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_270'>
+			<field name='name'>Portobelillo</field>
+			<field name='code'>270</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>35</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_271'>
+			<field name='name'>Potuga</field>
+			<field name='code'>271</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>35</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_272'>
+			<field name='name'>El Barrero</field>
+			<field name='code'>272</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_273'>
+			<field name='name'>El Pedregoso</field>
+			<field name='code'>273</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_274'>
+			<field name='name'>El Ciruelo</field>
+			<field name='code'>274</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_275'>
+			<field name='name'>El Pájaro</field>
+			<field name='code'>275</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_276'>
+			<field name='name'>Las Cabras</field>
+			<field name='code'>276</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_277'>
+			<field name='name'>Pesé</field>
+			<field name='code'>277</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_278'>
+			<field name='name'>Rincón Hondo</field>
+			<field name='code'>278</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_279'>
+			<field name='name'>Sabanagrande</field>
+			<field name='code'>279</field>
+			<field name='province_id'>6</field>
+			<field name='district_id'>36</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_280'>
+	    <field name='code'>280</field>
+	    <field name='district_id'>37</field>
+	    <field name='name'>Chupampa</field>
+	    <field name='province_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_281'>
+	    <field name='code'>281</field>
+	    <field name='district_id'>37</field>
+	    <field name='name'>El Rincón</field>
+	    <field name='province_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_282'>
+	    <field name='code'>282</field>
+	    <field name='district_id'>37</field>
+	    <field name='name'>El Limón</field>
+	    <field name='province_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_283'>
+	    <field name='code'>283</field>
+	    <field name='district_id'>37</field>
+	    <field name='name'>Los Canelos</field>
+	    <field name='province_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_284'>
+	    <field name='code'>284</field>
+	    <field name='district_id'>37</field>
+	    <field name='name'>Santa María</field>
+	    <field name='province_id'>6</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_285'>
+		  <field name='code'>285</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>El Espinal</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_286'>
+		  <field name='code'>286</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>El Hato</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_287'>
+		  <field name='code'>287</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>El Macano</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_288'>
+		  <field name='code'>288</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>Guararé</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_289'>
+		  <field name='code'>289</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>Guararé Arriba</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_290'>
+		  <field name='code'>290</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>La Enea</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_291'>
+		  <field name='code'>291</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>La Pasera</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_292'>
+		  <field name='code'>292</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>Las Trancas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_293'>
+		  <field name='code'>293</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>Llano Abajo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_294'>
+		  <field name='code'>294</field>
+		  <field name='district_id'>38</field>
+		  <field name='name'>Perales</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_295'>
+		  <field name='code'>295</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Bajo Corral</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_296'>
+		  <field name='code'>296</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Bayano</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_297'>
+		  <field name='code'>297</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>El Carate</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_298'>
+		  <field name='code'>298</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>El Cocal</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_299'>
+		  <field name='code'>299</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>El Manantial</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_300'>
+		  <field name='code'>300</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>El Muñoz</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_301'>
+		  <field name='code'>301</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>El Pedregoso</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_302'>
+		  <field name='code'>302</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>El Sesteadero</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_303'>
+		  <field name='code'>303</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>La Laja</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_304'>
+		  <field name='code'>304</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>La Miel</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_305'>
+		  <field name='code'>305</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>La Palma</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_306'>
+		  <field name='code'>306</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>La Tiza</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_307'>
+		  <field name='code'>307</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Las Palmitas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_308'>
+		  <field name='code'>308</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Las Tablas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_309'>
+		  <field name='code'>309</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Las Tablas Abajo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_310'>
+		  <field name='code'>310</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Nuario</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_311'>
+		  <field name='code'>311</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Palmira</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_312'>
+		  <field name='code'>312</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Peña Blanca</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_313'>
+		  <field name='code'>313</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Río Hondo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_314'>
+		  <field name='code'>314</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>San José</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_315'>
+		  <field name='code'>315</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>San Miguel</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_316'>
+		  <field name='code'>316</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Santo Domingo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_317'>
+		  <field name='code'>317</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Valle Rico</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_318'>
+		  <field name='code'>318</field>
+		  <field name='district_id'>39</field>
+		  <field name='name'>Vallerriquito</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_319'>
+		  <field name='code'>319</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>El Ejido</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_320'>
+		  <field name='code'>320</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>El Guásimo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_321'>
+		  <field name='code'>321</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>La Colorada</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_322'>
+		  <field name='code'>322</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>La Espigadilla</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_323'>
+		  <field name='code'>323</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>La Villa de Los Santos</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_324'>
+		  <field name='code'>324</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Las Cruces</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_325'>
+		  <field name='code'>325</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Las Guabas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_326'>
+		  <field name='code'>326</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Los Ángeles</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_327'>
+		  <field name='code'>327</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Los Olivos</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_328'>
+		  <field name='code'>328</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Llano Largo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_329'>
+		  <field name='code'>329</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Sabanagrande</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_330'>
+		  <field name='code'>330</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Santa Ana</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_331'>
+		  <field name='code'>331</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Tres Quebradas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_332'>
+		  <field name='code'>332</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Villa Lourdes</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_333'>
+		  <field name='code'>333</field>
+		  <field name='district_id'>40</field>
+		  <field name='name'>Agua Buena</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_334'>
+		  <field name='code'>334</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Bahía Honda</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_335'>
+		  <field name='code'>335</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Bajos de Güera</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_336'>
+		  <field name='code'>336</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Corozal</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_337'>
+		  <field name='code'>337</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Chupá</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_338'>
+		  <field name='code'>338</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>El Cedro</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_339'>
+		  <field name='code'>339</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Espino Amarillo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_340'>
+		  <field name='code'>340</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>La Mesa</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_341'>
+		  <field name='code'>341</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Las Palmas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_342'>
+		  <field name='code'>342</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Llano de Piedras</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_343'>
+		  <field name='code'>343</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Macaracas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_344'>
+		  <field name='code'>344</field>
+		  <field name='district_id'>41</field>
+		  <field name='name'>Mogollón</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_345'>
+		  <field name='code'>345</field>
+		  <field name='district_id'>42</field>
+		  <field name='name'>Los Asientos</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_346'>
+		  <field name='code'>346</field>
+		  <field name='district_id'>42</field>
+		  <field name='name'>Mariabé</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_347'>
+		  <field name='code'>347</field>
+		  <field name='district_id'>42</field>
+		  <field name='name'>Oria Arriba</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_348'>
+		  <field name='code'>348</field>
+		  <field name='district_id'>42</field>
+		  <field name='name'>Pedasí</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_349'>
+		  <field name='code'>349</field>
+		  <field name='district_id'>42</field>
+		  <field name='name'>Purio</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_350'>
+		  <field name='code'>350</field>
+		  <field name='district_id'>43</field>
+		  <field name='name'>El Cañafístulo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_351'>
+		  <field name='code'>351</field>
+		  <field name='district_id'>43</field>
+		  <field name='name'>Lajamina</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_352'>
+		  <field name='code'>352</field>
+		  <field name='district_id'>43</field>
+		  <field name='name'>Paraíso</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_353'>
+		  <field name='code'>353</field>
+		  <field name='district_id'>43</field>
+		  <field name='name'>Paritilla</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_354'>
+		  <field name='code'>354</field>
+		  <field name='district_id'>43</field>
+		  <field name='name'>Pocrí</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_355'>
+		  <field name='code'>355</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>Altos de Güera</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_356'>
+		  <field name='code'>356</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>Cambutal</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_357'>
+		  <field name='code'>357</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>Cañas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_358'>
+		  <field name='code'>358</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>El Bebedero</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_359'>
+		  <field name='code'>359</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>El Cacao</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_360'>
+		  <field name='code'>360</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>El Cortezo</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_361'>
+		  <field name='code'>361</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>Flores</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_362'>
+		  <field name='code'>362</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>Guánico</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_363'>
+		  <field name='code'>363</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>Isla de Cañas</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_364'>
+		  <field name='code'>364</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>La Tronosa</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_365'>
+		  <field name='code'>365</field>
+		  <field name='district_id'>44</field>
+		  <field name='name'>Tonosí</field>
+		  <field name='province_id'>7</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_366'>
+		  <field name='code'>366</field>
+		  <field name='district_id'>45</field>
+		  <field name='name'>La Ensenada</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_367'>
+		  <field name='code'>367</field>
+		  <field name='district_id'>45</field>
+		  <field name='name'>La Esmeralda</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_368'>
+		  <field name='code'>368</field>
+		  <field name='district_id'>45</field>
+		  <field name='name'>La Guinea</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_369'>
+		  <field name='code'>369</field>
+		  <field name='district_id'>45</field>
+		  <field name='name'>Pedro González</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_370'>
+		  <field name='code'>370</field>
+		  <field name='district_id'>45</field>
+		  <field name='name'>Saboga</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_371'>
+		  <field name='code'>371</field>
+		  <field name='district_id'>45</field>
+		  <field name='name'>San Miguel</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_372'>
+		  <field name='code'>372</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>Cañita</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_373'>
+		  <field name='code'>373</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>Chepillo</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_374'>
+		  <field name='code'>374</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>El Llano</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_375'>
+		  <field name='code'>375</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>Las Margaritas</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_376'>
+		  <field name='code'>376</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>Madugandí</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_377'>
+		  <field name='code'>377</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>San Cristóbal de Chepo</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_378'>
+		  <field name='code'>378</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>Santa Cruz de Chinina</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_379'>
+		  <field name='code'>379</field>
+		  <field name='district_id'>46</field>
+		  <field name='name'>Tortí</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_380'>
+		  <field name='code'>380</field>
+		  <field name='district_id'>47</field>
+		  <field name='name'>Brujas</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_381'>
+		  <field name='code'>381</field>
+		  <field name='district_id'>47</field>
+		  <field name='name'>Chimán</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_382'>
+		  <field name='code'>382</field>
+		  <field name='district_id'>47</field>
+		  <field name='name'>Gonzalo Vásquez</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_383'>
+		  <field name='code'>383</field>
+		  <field name='district_id'>47</field>
+		  <field name='name'>Pásiga</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_384'>
+		  <field name='code'>384</field>
+		  <field name='district_id'>47</field>
+		  <field name='name'>Unión Santeña</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_385'>
+		  <field name='code'>385</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>24 de Diciembre</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_386'>
+		  <field name='code'>386</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Alcalde Díaz</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_387'>
+		  <field name='code'>387</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Ancón</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_388'>
+		  <field name='code'>388</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Betania</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_389'>
+		  <field name='code'>389</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Bella Vista</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_390'>
+		  <field name='code'>390</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Calidonia</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_391'>
+		  <field name='code'>391</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Caimitillo</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_392'>
+		  <field name='code'>392</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Chilibre</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_393'>
+		  <field name='code'>393</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Curundú</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_394'>
+		  <field name='code'>394</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>El Chorrillo</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_395'>
+		  <field name='code'>395</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Ernesto Córdoba Campos</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_396'>
+		  <field name='code'>396</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Juan Díaz</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_397'>
+		  <field name='code'>397</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Las Cumbres</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_398'>
+		  <field name='code'>398</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Las Mañanitas</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_399'>
+		  <field name='code'>399</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Pacora</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_400'>
+		  <field name='code'>400</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Parque Lefevre</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_401'>
+		  <field name='code'>401</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Pedregal</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_402'>
+		  <field name='code'>402</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Pueblo Nuevo</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_403'>
+		  <field name='code'>403</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Río Abajo</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_404'>
+		  <field name='code'>404</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>San Felipe</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_405'>
+		  <field name='code'>405</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>San Francisco</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_406'>
+		  <field name='code'>406</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>San Martín</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_407'>
+		  <field name='code'>407</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Santa Ana</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_408'>
+		  <field name='code'>408</field>
+		  <field name='district_id'>48</field>
+		  <field name='name'>Tocumen</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_409'>
+		  <field name='code'>409</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Amelia Denis de Icaza</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_410'>
+		  <field name='code'>410</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Arnulfo Arias</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_411'>
+		  <field name='code'>411</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Belisario Frías</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_412'>
+		  <field name='code'>412</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Belisario Porras</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_413'>
+		  <field name='code'>413</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>José Domingo Espinar</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_414'>
+		  <field name='code'>414</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Mateo Iturralde</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_415'>
+		  <field name='code'>415</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Omar Torrijos</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_416'>
+		  <field name='code'>416</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Rufina Alfaro</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_417'>
+		  <field name='code'>417</field>
+		  <field name='district_id'>49</field>
+		  <field name='name'>Victoriano Lorenzo</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_418'>
+		  <field name='code'>418</field>
+		  <field name='district_id'>50</field>
+		  <field name='name'>Otoque Occidente</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_419'>
+		  <field name='code'>419</field>
+		  <field name='district_id'>50</field>
+		  <field name='name'>Otoque Oriente</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_420'>
+		  <field name='code'>420</field>
+		  <field name='district_id'>50</field>
+		  <field name='name'>Taboga</field>
+		  <field name='province_id'>8</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_421'>
+		  <field name='code'>421</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Arraiján</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_422'>
+		  <field name='code'>422</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Burunga</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_423'>
+		  <field name='code'>423</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Cerro Silvestre</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_424'>
+		  <field name='code'>424</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Juan Demóstenes Arosemena</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_425'>
+		  <field name='code'>425</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Nuevo Emperador</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_426'>
+		  <field name='code'>426</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Santa Clara</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_427'>
+		  <field name='code'>427</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Veracruz</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_428'>
+		  <field name='code'>428</field>
+		  <field name='district_id'>51</field>
+		  <field name='name'>Vista Alegre</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_429'>
+		  <field name='code'>429</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Caimito</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_430'>
+		  <field name='code'>430</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Campana</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_431'>
+		  <field name='code'>431</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Capira</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_432'>
+		  <field name='code'>432</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Cermeño</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_433'>
+		  <field name='code'>433</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Cirí de Los Sotos</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_434'>
+		  <field name='code'>434</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Cirí Grande</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_435'>
+		  <field name='code'>435</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>El Cacao</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_436'>
+		  <field name='code'>436</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>La Trinidad</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_437'>
+		  <field name='code'>437</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Las Ollas Arriba</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_438'>
+		  <field name='code'>438</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Lídice</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_439'>
+		  <field name='code'>439</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Villa Carmen</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_440'>
+		  <field name='code'>440</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Villa Rosario</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_441'>
+		  <field name='code'>441</field>
+		  <field name='district_id'>52</field>
+		  <field name='name'>Santa Rosa</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_442'>
+		  <field name='code'>442</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Bejuco</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_443'>
+		  <field name='code'>443</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Buenos Aires</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_444'>
+		  <field name='code'>444</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Cabuya</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_445'>
+		  <field name='code'>445</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Chame</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_446'>
+		  <field name='code'>446</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Chicá</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_447'>
+		  <field name='code'>447</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>El Líbano</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_448'>
+		  <field name='code'>448</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Las Lajas</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_449'>
+		  <field name='code'>449</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Nueva Gorgona</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_450'>
+		  <field name='code'>450</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Punta Chame</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_451'>
+		  <field name='code'>451</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Sajalices</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_452'>
+		  <field name='code'>452</field>
+		  <field name='district_id'>53</field>
+		  <field name='name'>Sorá</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_453'>
+		  <field name='code'>453</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Amador</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_454'>
+		  <field name='code'>454</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Arosemena</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_455'>
+		  <field name='code'>455</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Barrio Balboa</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_456'>
+		  <field name='code'>456</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Barrio Colón</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_457'>
+		  <field name='code'>457</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>El Arado</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_458'>
+		  <field name='code'>458</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>El Coco</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_459'>
+		  <field name='code'>459</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Feuillet</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_460'>
+		  <field name='code'>460</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Guadalupe</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_461'>
+		  <field name='code'>461</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Herrera</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_462'>
+		  <field name='code'>462</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Hurtado</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_463'>
+		  <field name='code'>463</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Iturralde</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_464'>
+		  <field name='code'>464</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>La Represa</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_465'>
+		  <field name='code'>465</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Los Díaz</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_466'>
+		  <field name='code'>466</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Mendoza</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_467'>
+		  <field name='code'>467</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Obaldía</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_468'>
+		  <field name='code'>468</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Playa Leona</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_469'>
+		  <field name='code'>469</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Puerto Caimito</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_470'>
+		  <field name='code'>470</field>
+		  <field name='district_id'>54</field>
+		  <field name='name'>Santa Rita</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_471'>
+		  <field name='code'>471</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>El Espino</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_472'>
+		  <field name='code'>472</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>El Higo</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_473'>
+		  <field name='code'>473</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>Guayabito</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_474'>
+		  <field name='code'>474</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>La Ermita</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_475'>
+		  <field name='code'>475</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>La Laguna</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_476'>
+		  <field name='code'>476</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>Las Uvas</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_477'>
+		  <field name='code'>477</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>Los Llanitos</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_478'>
+		  <field name='code'>478</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>San Carlos Borromeo</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_479'>
+		  <field name='code'>479</field>
+		  <field name='district_id'>55</field>
+		  <field name='name'>San José</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_480'>
+		  <field name='code'>480</field>
+		  <field name='district_id'>56</field>
+		  <field name='name'>Jesús Nazareno de Atalaya</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_481'>
+		  <field name='code'>481</field>
+		  <field name='district_id'>56</field>
+		  <field name='name'>El Barrito</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_482'>
+		  <field name='code'>482</field>
+		  <field name='district_id'>56</field>
+		  <field name='name'>La Carrillo</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_483'>
+		  <field name='code'>483</field>
+		  <field name='district_id'>56</field>
+		  <field name='name'>La Montañuela</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_484'>
+		  <field name='code'>484</field>
+		  <field name='district_id'>56</field>
+		  <field name='name'>San Antonio</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_485'>
+		  <field name='code'>485</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>Barnizal</field>
+		  <field name='province_id'>10</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_486'>
+		  <field name='code'>486</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>Calobre</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_487'>
+		  <field name='code'>487</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>Chitra</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_488'>
+		  <field name='code'>488</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>El Cocla</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_489'>
+		  <field name='code'>489</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>El Potrero</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_490'>
+		  <field name='code'>490</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>La Laguna</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_491'>
+		  <field name='code'>491</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>La Raya de Calobre</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_492'>
+		  <field name='code'>492</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>La Tetilla</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_493'>
+		  <field name='code'>493</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>La Yeguada</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_494'>
+		  <field name='code'>494</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>Las Guías</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_495'>
+		  <field name='code'>495</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>Monjarás</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_496'>
+		  <field name='code'>496</field>
+		  <field name='district_id'>57</field>
+		  <field name='name'>San José</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_497'>
+		  <field name='code'>497</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>San Francisco Javier de Cañazas</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_498'>
+		  <field name='code'>498</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>Cerro de Plata</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_499'>
+		  <field name='code'>499</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>El Aromillo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_500'>
+		  <field name='code'>500</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>El Picador</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_501'>
+		  <field name='code'>501</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>Las Cruces</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_502'>
+		  <field name='code'>502</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>Los Valles</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_503'>
+		  <field name='code'>503</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>San José</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_504'>
+		  <field name='code'>504</field>
+		  <field name='district_id'>58</field>
+		  <field name='name'>San Marcelo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_505'>
+		  <field name='code'>505</field>
+		  <field name='district_id'>59</field>
+		  <field name='name'>Bisvalles</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_506'>
+		  <field name='code'>506</field>
+		  <field name='district_id'>59</field>
+		  <field name='name'>Boró</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_507'>
+		  <field name='code'>507</field>
+		  <field name='district_id'>59</field>
+		  <field name='name'>El Higo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_508'>
+		  <field name='code'>508</field>
+		  <field name='district_id'>59</field>
+		  <field name='name'>La Mesa</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_509'>
+		  <field name='code'>509</field>
+		  <field name='district_id'>59</field>
+		  <field name='name'>Los Milagros</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_510'>
+		  <field name='code'>510</field>
+		  <field name='district_id'>59</field>
+		  <field name='name'>Llano Grande</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_511'>
+		  <field name='code'>511</field>
+		  <field name='district_id'>59</field>
+		  <field name='name'>San Bartolo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_512'>
+		  <field name='code'>512</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Cerro de Casa</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_513'>
+		  <field name='code'>513</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Corozal</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_514'>
+		  <field name='code'>514</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>El María</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_515'>
+		  <field name='code'>515</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>El Prado</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_516'>
+		  <field name='code'>516</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>El Rincón</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_517'>
+		  <field name='code'>517</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Las Palmas</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_518'>
+		  <field name='code'>518</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Lolá</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_519'>
+		  <field name='code'>519</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Manuel Encarnación Amador Terreros</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_520'>
+		  <field name='code'>520</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Pixvae</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_521'>
+		  <field name='code'>521</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Puerto Vidal</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_522'>
+		  <field name='code'>522</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>San Martín de Porres</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_523'>
+		  <field name='code'>523</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Viguí</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_524'>
+		  <field name='code'>524</field>
+		  <field name='district_id'>60</field>
+		  <field name='name'>Zapotillo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_525'>
+		  <field name='code'>525</field>
+		  <field name='district_id'>61</field>
+		  <field name='name'>Arenas</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_526'>
+		  <field name='code'>526</field>
+		  <field name='district_id'>61</field>
+		  <field name='name'>El Cacao</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_527'>
+		  <field name='code'>527</field>
+		  <field name='district_id'>61</field>
+		  <field name='name'>Mariato</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_528'>
+		  <field name='code'>528</field>
+		  <field name='district_id'>61</field>
+		  <field name='name'>Quebro</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_529'>
+		  <field name='code'>529</field>
+		  <field name='district_id'>61</field>
+		  <field name='name'>Tebario</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_530'>
+		  <field name='code'>530</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>Cébaco</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_531'>
+		  <field name='code'>531</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>Costa Hermosa</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_532'>
+		  <field name='code'>532</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>Gobernadora</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_533'>
+		  <field name='code'>533</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>La Garceana</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_534'>
+		  <field name='code'>534</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>Leones</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_535'>
+		  <field name='code'>535</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>Montijo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_536'>
+		  <field name='code'>536</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>Pilón</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_537'>
+		  <field name='code'>537</field>
+		  <field name='district_id'>62</field>
+		  <field name='name'>Unión del Norte</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_538'>
+		  <field name='code'>538</field>
+		  <field name='district_id'>63</field>
+		  <field name='name'>Catorce de Noviembre</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_539'>
+		  <field name='code'>539</field>
+		  <field name='district_id'>63</field>
+		  <field name='name'>La Ermita de Río de Jesús</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_540'>
+		  <field name='code'>540</field>
+		  <field name='district_id'>63</field>
+		  <field name='name'>Las Huacas</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_541'>
+		  <field name='code'>541</field>
+		  <field name='district_id'>63</field>
+		  <field name='name'>Los Castillos</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_542'>
+		  <field name='code'>542</field>
+		  <field name='district_id'>63</field>
+		  <field name='name'>Nuevo San Juan</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_543'>
+		  <field name='code'>543</field>
+		  <field name='district_id'>63</field>
+		  <field name='name'>Utira</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_544'>
+		  <field name='code'>544</field>
+		  <field name='district_id'>64</field>
+		  <field name='name'>Corral Falso</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_545'>
+		  <field name='code'>545</field>
+		  <field name='district_id'>64</field>
+		  <field name='name'>Los Hatillos</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_546'>
+		  <field name='code'>546</field>
+		  <field name='district_id'>64</field>
+		  <field name='name'>Remance</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_547'>
+		  <field name='code'>547</field>
+		  <field name='district_id'>64</field>
+		  <field name='name'>San Francisco de la Montaña</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_548'>
+		  <field name='code'>548</field>
+		  <field name='district_id'>64</field>
+		  <field name='name'>San Juan</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_549'>
+		  <field name='code'>549</field>
+		  <field name='district_id'>64</field>
+		  <field name='name'>San José</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_550'>
+		  <field name='code'>550</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>Calovébora</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_551'>
+		  <field name='code'>551</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>El Alto</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_552'>
+		  <field name='code'>552</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>El Cuay</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_553'>
+		  <field name='code'>553</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>El Pantano</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_554'>
+		  <field name='code'>554</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>Gatuncito</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_555'>
+		  <field name='code'>555</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>Río Luis</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_556'>
+		  <field name='code'>556</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>Rubén Cantú</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_557'>
+		  <field name='code'>557</field>
+		  <field name='district_id'>65</field>
+		  <field name='name'>Santa Fe</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_558'>
+		  <field name='code'>558</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Canto del Llano</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_559'>
+		  <field name='code'>559</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Carlos Santana Ávila</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_560'>
+		  <field name='code'>560</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Edwin Fábrega</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_561'>
+		  <field name='code'>561</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>El Llanito</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_562'>
+		  <field name='code'>562</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>La Colorada</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_563'>
+		  <field name='code'>563</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>La Peña</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_564'>
+		  <field name='code'>564</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>La Raya de Santa María</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_565'>
+		  <field name='code'>565</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>La Soledad</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_566'>
+		  <field name='code'>566</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Los Algarrobos</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_567'>
+		  <field name='code'>567</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Ponuga</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_568'>
+		  <field name='code'>568</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>San Martín de Porres</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_569'>
+		  <field name='code'>569</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>San Pedro del Espino</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_570'>
+		  <field name='code'>570</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Santiago Apóstol</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_571'>
+		  <field name='code'>571</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Rincón Largo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_572'>
+		  <field name='code'>572</field>
+		  <field name='district_id'>66</field>
+		  <field name='name'>Urracá</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_573'>
+		  <field name='code'>573</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Bahía Honda</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_574'>
+		  <field name='code'>574</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Calidonia</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_575'>
+		  <field name='code'>575</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Cativé</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_576'>
+		  <field name='code'>576</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>El Marañón</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_577'>
+		  <field name='code'>577</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Guarumal</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_578'>
+		  <field name='code'>578</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Hicaco</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_579'>
+		  <field name='code'>579</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>La Soledad</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_580'>
+		  <field name='code'>580</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Quebrada de Oro</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_581'>
+		  <field name='code'>581</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Río Grande</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_582'>
+		  <field name='code'>582</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Rodeo Viejo</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.sector'   id='neonety.sector_583'>
+		  <field name='code'>583</field>
+		  <field name='district_id'>67</field>
+		  <field name='name'>Soná</field>
+		  <field name='province_id'>9</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_1'>
+			<field name='name'>Bocas del Toro</field>
+			<field name='code'>1</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_2'>
+			<field name='name'>Coclé</field>
+			<field name='code'>2</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_3'>
+			<field name='name'>Colón</field>
+			<field name='code'>3</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_4'>
+			<field name='name'>Chiriquí</field>
+			<field name='code'>4</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_5'>
+			<field name='name'>Darién</field>
+			<field name='code'>5</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_6'>
+			<field name='name'>Herrera</field>
+			<field name='code'>6</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_7'>
+			<field name='name'>Los Santos</field>
+			<field name='code'>7</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_8'>
+			<field name='name'>Panamá Centro</field>
+			<field name='code'>8</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_9'>
+			<field name='name'>Veraguas</field>
+			<field name='code'>9</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_10'>
+			<field name='name'>Panamá Oeste</field>
+			<field name='code'>10</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_11'>
+			<field name='name'>Panamá San Miguelito</field>
+			<field name='code'>11</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_12'>
+			<field name='name'>Panamá Norte</field>
+			<field name='code'>12</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_13'>
+			<field name='name'>Panamá Este</field>
+			<field name='code'>13</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_14'>
+			<field name='name'>Emberá-Wounaan</field>
+			<field name='code'>14</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_15'>
+			<field name='name'>Guna Yala</field>
+			<field name='code'>15</field>
+		</record>
+		<record model='neonety.region'   id='neonety.region_16'>
+			<field name='name'>Ngäbe-Buglé</field>
+			<field name='code'>16</field>
+		</record>
+	</data>
+</odoo>

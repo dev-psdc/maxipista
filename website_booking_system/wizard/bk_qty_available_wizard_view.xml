@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+        <record id="booking_available_quantity_wizard_form_view" model="ir.ui.view">
+            <field name="name">remove.notification.wizard.form</field>
+            <field name="model">booking.quantity.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group invisible="context.get('is_done',False)">
+                            <field name="bk_product_id" attrs="{ 'invisible': [('bk_product_id', '=', False)], 'readonly': [('bk_product_id', '!=', False)]}"/>
+                            <field name="bk_date" autocomplete="off"/>
+                            <field name="booking_slot_id" options="{'no_create_edit': True, 'no_create': True, 'no_open': True,}" context="{'tree_view_ref': 'website_booking_system.wk_booking_slot_n_plan_tree_view'}"/>
+                        </group>
+                        <group invisible="not context.get('is_done',False)">
+                            <span style="font-size: 16px;font-weight: 700;">
+                                Citas disponibles para el lugar y fecha son <!--Available booking quantity for the selected date and slot is -->
+                                <field name="bk_av_qty" readonly="1" nolabel="1"/>
+                            </span>
+                        </group>
+                    </group>
+                    <footer>
+                        <button type="object" class="oe_highlight" name="get_bk_available_qty" string="Cantidad disponible" invisible="context.get('is_done',False)"/> 
+                        <!-- Available Quantity -->
+                        <button special="cancel" class="oe_highlight" string="Cancelar" invisible="context.get('is_done',False)"/>
+                        <!-- Cancel -->
+                        <button special="cancel" class="oe_highlight" string="Ok" invisible="not context.get('is_done',False)"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

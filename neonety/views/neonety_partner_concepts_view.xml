@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!-- <record
+			id='neonety.partner_concepts_kanban'
+			model='ir.ui.view'>
+			<field name='name'>neonety.partner.concepts.kanban</field>
+			<field name='model'>neonety.partner.concept</field>
+			<field name='arch' type='xml'>
+				<kanban>
+					<field name='name'/>
+					<templates>
+						<t t-name='kanban-box'>
+							<div t-attf-class="oe_kanban_color_{{ kanban_getcolor(record.name.raw_value) }}
+								oe_kanban_global_click_edit oe_semantic_html_override
+								oe_kanban_card {{ record.group_fancy==1 ? 'oe_kanban_card_fancy' : '' }}">
+								<div class="oe_dropdown_kanban">
+									<div class="oe_dropdown_toggle">
+										<i class='fa fa-bars fa-lg'/>
+										<ul class="oe_dropdown_menu">
+											<li>
+												<a type='delete'>Delete</a>
+											</li>
+										</ul>
+									</div>
+									<div class='oe_clear'></div>
+								</div>
+								<div t-attf-class='oe_kanban_content'>
+									Concepto:
+									<field name='name'/>
+								</div>
+							</div>
+						</t>
+					</templates>
+				</kanban>
+			</field>
+		</record> -->
+		<record
+			id='neonety.partner_concepts_form'
+			model='ir.ui.view'>
+			<field name='name'>neonety.partner.concepts.form</field>
+			<field name='model'>neonety.partner.concept</field>
+			<field name='arch' type='xml'>
+				<form>
+					<sheet>
+						<group>
+							<field name='name'/>
+							<field name='status'/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record
+			id='neonety.partner_concepts_tree'
+			model='ir.ui.view'>
+			<field name='name'>neonety.partner.concepts.tree</field>
+			<field name='model'>neonety.partner.concept</field>
+			<field name='arch' type='xml'>
+				<tree>
+					<field name='name'/>
+					<field name='status'/>
+				</tree>
+			</field>
+		</record>
+		<record
+			id='neonety.partner_concepts_search'
+			model='ir.ui.view'>
+			<field name='name'>neonety.partner.concepts.search</field>
+			<field name='model'>neonety.partner.concept</field>
+			<field name='arch' type='xml'>
+				<search>
+					<field name='name'/>
+				</search>
+			</field>
+		</record>
+		<record
+			id='neonety.partner_concepts_window'
+			model='ir.actions.act_window'>
+			<field name='name'>Conceptos sobre proveedores</field>
+			<field name='res_model'>neonety.partner.concept</field>
+			<field name='view_mode'>kanban,form,tree,search</field>
+			<field name='view_id' ref='neonety.partner_concepts_tree' />
+		</record>
+		<menuitem
+			id='neonety.menu_root'
+			name='Proveedores'
+			parent='base.menu_administration'/>
+		<menuitem
+			id='neonety.partner_concepts_list'
+			name='Conceptos'
+			parent='neonety.menu_root'
+			sequence="0"
+			action='neonety.partner_concepts_window'/>
+	</data>
+</odoo>

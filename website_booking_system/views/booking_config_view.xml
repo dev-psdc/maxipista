@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+        <menuitem id="wk_booking_menu_root"
+            name="Citas"
+            web_icon="website_booking_system,static/description/icon.png"/>
+
+        <!-- **************Booking Day Slot Config Records************** -->
+        <record id="wk_booking_day_slot_config_Form_view" model="ir.ui.view">
+            <field name="name">Booking Day Slot Config Form</field>
+            <field name="model">day.slot.config</field>
+            <field name="arch" type="xml">
+                <form string="Configurar dias y fechas">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="booking_status"/>
+                        </group>
+                    </group>
+                    <div attrs="{'invisible':[('booking_status','!=','open')]}">
+                        <group string="Horas y ubicaciones">
+                            <field name="booking_slots_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="time_slot_id" options="{'no_open':True, 'no_create_edit':True,'no_create':True}"/>
+                                    <field name="plan_id" options="{'no_open':True, 'no_create_edit':True,'no_create':True}"/>
+                                    <field name="quantity"/>
+                                    <field name="price"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="wk_booking_day_slot_config_tree_view" model="ir.ui.view">
+            <field name="name">Booking Day Slot Config Tree</field>
+            <field name="model">day.slot.config</field>
+            <field name="arch" type="xml">
+                <tree string="Configurar dias y fechas">
+                    <field name="name"/>
+                    <field name="booking_status"/>
+                </tree>
+            </field>
+        </record>
+        <!-- **************END************** -->
+
+        <!-- **************Booking Plans Records************** -->
+        <record id="wk_booking_plan_Form_view" model="ir.ui.view">
+            <field name="name">Booking Plan Form</field>
+            <field name="model">booking.plan</field>
+            <field name="arch" type="xml">
+                <form string="Booking Plans">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="sequence"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="discription"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="wk_booking_plan_tree_view" model="ir.ui.view">
+            <field name="name">Booking Plan Tree</field>
+            <field name="model">booking.plan</field>
+            <field name="arch" type="xml">
+                <tree string="Booking Plans">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="wk_booking_plan_action" model="ir.actions.act_window">
+            <field name="name">Ubicaciones</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">booking.plan</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- **************END************** -->
+
+        <!-- **************Booking Time Slots Records************** -->
+        <record id="wk_booking_time_slot_tree_view" model="ir.ui.view">
+            <field name="name">Booking Time Slot Tree</field>
+            <field name="model">booking.time.slot</field>
+            <field name="arch" type="xml">
+                <tree string="Booking Time Slots" editable="top">
+                    <field name="sequence" widget="handle"/>
+                    <field name="start_time" widget="float_time"/>
+                    <field name="end_time" widget="float_time"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="wk_booking_time_slot_action" model="ir.actions.act_window">
+            <field name="name">Horarios</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">booking.time.slot</field>
+            <field name="view_mode">tree</field>
+        </record>
+        <!-- **************END************** -->
+
+
+        <!-- ************************************** -->
+        <record id="wk_booking_slot_n_plan_tree_view" model="ir.ui.view">
+            <field name="name">Booking Slot n Plan Tree</field>
+            <field name="model">booking.slot</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="time_slot_id"/>
+                    <field name="plan_id"/>
+                    <field name="quantity"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+        <!-- *********************************** -->
+
+        <menuitem
+            id="booking_config_main_menu"
+            name="Configuración"
+            parent="wk_booking_menu_root"
+            sequence="4"
+        />
+        <menuitem
+            id="booking_plan_menu"
+            name="Ubicaciones"
+            action="wk_booking_plan_action"
+            parent="website_booking_system.booking_config_main_menu"
+            sequence="1"
+        />
+        <menuitem
+            id="booking_time_slot_menu"
+            name="Horarios"
+            action="wk_booking_time_slot_action"
+            parent="website_booking_system.booking_config_main_menu"
+            sequence="2"
+        />
+
+    </data>
+</odoo>

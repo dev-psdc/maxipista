@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+
+        <template id="booking_assets_frontend" inherit_id="website.assets_frontend" name="Booking System">
+            <xpath expr="." position="inside">
+                <link rel='stylesheet' href='/website_booking_system/static/src/css/booking_n_reservation.css'/>
+                <link rel='stylesheet' href='/website_booking_system/static/src/css/booking_n_res_mob.css'/>
+                <script type="text/javascript" src="/website_booking_system/static/src/js/booking_n_reservation.js"></script>
+            </xpath>
+        </template>
+
+        <!-- Booking and reservation sub div plans -->
+        <template id="booking_sel_plans">
+            <div class="col-12" style="padding: 0;">
+                <span class="pull-left" style="font-size: 16px;margin-top: 22px;font-weight: bold;">
+                    Seleccione ubicación:
+                </span>
+                <span class="pull-right bk_plan_base_price" t-esc="00.00" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+            </div>
+            <div class="row col-12 bk_plans_m_div">
+                <t t-foreach="d_plans" t-as="d_plan">
+                    <div class="col-md-4 col-12" style="padding: 5px 11px;">
+                        <label t-att-for="'bk_plan_%s' % d_plan['id']" style="display: block;margin-bottom: 0;">
+                            <input type="radio" name="bk_plan" required="true" t-att-id="'bk_plan_%s' % d_plan['id']" t-att-value="d_plan['id']" style="display: none;"/>
+                            <t t-set="bk_av_qty" t-value="product.sudo().get_bk_slot_available_qty(current_date, d_plan['id'])"/>
+                            <div t-att-class="'bk_plan_div bk_disable' if not bk_av_qty > 0 else 'bk_plan_div'" t-att-data-plan_price="d_plan['price']">
+                                <div class="d-none d-sm-block">
+                                    <div style="font-size: 20px;">
+                                        <t t-esc="d_plan['name']"/>
+                                    </div>
+                                    <div style="font-size: 18px;font-weight: 700;">
+                                        <span t-esc="d_plan['price']" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    </div>
+                                    <div t-if="bk_av_qty > 0" class="bk_plan_avl">
+                                        Disponible
+                                    </div>
+                                    <div t-if="not bk_av_qty > 0" class="bk_plan_sold">
+                                        Agotado
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <span style="font-size: 18px;">
+                                            <t t-esc="d_plan['name']"/>
+                                        </span>
+                                        <span t-if="bk_av_qty > 0" class="pull-right bk_plan_avl">
+                                            Disponible
+                                        </span>
+                                        <span t-if="not bk_av_qty > 0" class="pull-right bk_plan_sold">
+                                            Agotado
+                                        </span>
+                                    </div>
+                                    <div style="font-size: 14px;font-weight: 700;">
+                                        <span t-esc="d_plan['price']" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </t>
+            </div>
+            <div class="col-12" style="padding: 0;">
+                <span class="pull-left" style="font-size: 16px;margin-top: 22px;font-weight: bold;">
+                    Llenar formulario:
+                </span>
+            </div>
+            <div class="row col-xs-12 bk_plans_m_div">
+              <div class="col-6">
+                  <div>
+                      <div>
+                          <label>Nombre del Paciente</label>
+                      </div>
+                      <div >
+                          <input type="text" name="bk_patient_name"/>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div>
+                      <div>
+                          <label for="bk_card_id">Cédula del Paciente</label>
+                      </div>
+                      <div>
+                          <input type="text" name="bk_id_card"/>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div>
+                      <div>
+                          <label for="bk_birthday">Fecha de Nacimiento</label>
+                      </div>
+                      <div>
+                          <input type="date" min="1950-01-01" name="bk_birthday" t-att-value="date_formatted" class="datetimepicker-input form-control kb_birthday" data-date-format="YYYY-MM-DD" t-att-name="prefix" placeholder="YYYY-MM-DD"/>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div>
+                      <div>
+                          <label for="bk_card_id">Correo Electrónico</label>
+                      </div>
+                      <div>
+                          <input type="email" name="bk_email"/>
+                      </div>
+                  </div>
+              </div>
+              <div class="row col-12">
+                  <div class="col-8">
+                      <label class="col-form-label" for="sex">Sexo</label>
+                  </div>
+                  <div class="col-4" style="margin-top: 10px;">
+                      <div>
+                          <div>
+                              <label>
+                                  <input type="radio" name="sex" value="Masculino"/>
+                                  <span> Masculino </span>
+                              </label>
+                          </div>
+                      </div>
+                      <div>
+                          <div>
+                              <label>
+                                  <input type="radio" name="sex" value="Femenino"/>
+                                  <span> Femenino </span>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <script type="text/javascript">
+
+                function yesnocheck(){
+                    if (document.getElementById('no').checked){
+                        document.getElementById('bk_test').style.display = 'none';
+                        document.getElementById('bk_test_1').style.display = 'none';
+                        document.getElementById('bk_test_2').style.display = 'none';
+                    }
+                    else {
+                        document.getElementById('bk_test').style.display = 'block';
+                        document.getElementById('bk_test_1').style.display = 'block';
+                        document.getElementById('bk_test_2').style.display = 'block';
+                    }
+                }
+                
+              </script>
+
+              <div class="row col-12">
+                  <div class="col-8">
+                      <label class="col-form-label" for="bk_covid_test">Se ha realizado la prueba de COVID-19 previamente</label>
+                  </div>
+                  <div class="col-4" style="margin-top: 10px;">
+                      <div>
+                          <div>
+                              <label>
+                                  <input type="radio" onclick="javascript:yesnocheck()" name="bk_covid_test" id="yes" value="yes" required=""/>
+                                  <span> Si </span>
+                              </label>
+                          </div>
+                      </div>
+                      <div>
+                          <div>
+                              <label>
+                                  <input type="radio" onclick="javascript:yesnocheck()" name="bk_covid_test" id="no" value="no" required=""/>
+                                  <span> No </span>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row col-12 bk_test_pre" id="bk_test" style="display: none;">
+                  <div class="col-8">
+                      <label class="col-form-label" for="bk_previous_test_result">Resultado de la Prueba</label>
+                  </div>
+                  <div class="col-4" style="margin-top: 10px;">
+                      <div>
+                          <div>
+                              <label>
+                                  <input type="radio" name="bk_previous_test_result" value="positive"/>
+                                  <span> Positive </span>
+                              </label>
+                          </div>
+                      </div>
+                      <div>
+                          <div>
+                              <label>
+                                  <input type="radio" name="bk_previous_test_result" value="negative"/>
+                                  <span> Negative </span>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row col-12 bk_test_pre" id="bk_test_1" style="display: none;">
+                <div class="col-6">
+                    <label for="bk_date_of_previous_test">Fecha de la Prueba Anterior</label>
+                </div>
+              </div>
+              <div class="row col-12 bk_test_pre" id="bk_test_2" style="display: none;">
+                <div class="col-6">
+                    <div class="o_website_form_flex">
+                        <div class="date o_website_form_flex_item">
+                            <label>
+                                <input type="date" min="2020-01-01" name="kb_date_of_previous_test" t-att-value="date_formatted" class="datetimepicker-input form-control kb_date_of_previous_test" data-date-format="YYYY-MM-DD" t-att-name="prefix" placeholder="YYYY-MM-DD"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row col-12">
+                  <div class="col-8">
+                      <label for="bk_other_symptom">Sintomas</label>
+                  </div>
+              </div>
+              <div class="row col-12">
+                <div class="col-12" style="width: 100%;">
+                    <label style="width: 100%;">
+                        <textarea name="bk_other_symptom" style="width: 100%;"/>
+                    </label>
+                </div>
+              </div>
+              <div class="row col-12">
+                  <div class="col-8">
+                      <div>
+                          <label>País</label>
+                      </div>
+                      <div>
+                          <select name="country_id" class="form-control" disabled="true">
+                              <option value=""> -- Seleccione País -- </option>
+                              <t t-foreach="country" t-as="country_id">
+                                  <option t-att-value="country_id.id" t-att-selected="country_id.name == 'Panamá'">
+                                      <t t-esc="country_id.name"/>
+                                  </option>
+                              </t>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="row col-12">
+                  <div class="col-8">
+                      <div>
+                          <label>Provincia</label>
+                      </div>
+                      <div>
+                          <select name="province_id" class="form-control">
+                              <option value=""> -- Seleccione Provincia -- </option>
+                              <t t-foreach="province" t-as="province_id">
+                                  <option t-att-value="province_id.id">
+                                      <t t-esc="province_id.name"/>
+                                  </option>
+                              </t>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="row col-12">
+                  <div class="col-8">
+                      <div>
+                          <label>Distrito</label>
+                      </div>
+                      <div>
+                          <select id="id_district" name="district_id" class="form-control">
+                              <option value=""> -- Seleccione Distrito -- </option>
+                              <t t-foreach="district" t-as="district_id">
+                                  <option class="sortMe" t-att-value="district_id.id">
+                                      <t t-esc="district_id.name"/>
+                                  </option>
+                              </t>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="row col-12">
+                  <div class="col-8">
+                      <div>
+                          <label>Corregimiento</label>
+                      </div>
+                      <div>
+                          <select id="id_sector" name="sector_id" class="form-control">
+                              <option value=""> -- Seleccione Corregimiento -- </option>
+                              <t t-foreach="sector" t-as="sector_id">
+                                  <option class="sortMe" t-att-value="sector_id.id">
+                                      <t t-esc="sector_id.name" />
+                                  </option>
+                              </t>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="row col-12">
+                  <div class="col-8">
+                      <div>
+                          <label>Región de Salud</label>
+                      </div>
+                      <div>
+                          <select name="region_id" class="form-control">
+                              <option value=""> -- Seleccione Región -- </option>
+                              <t t-foreach="region" t-as="region_id">
+                                  <option t-att-value="region_id.id">
+                                      <t t-esc="region_id.name" />
+                                  </option>
+                              </t>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </template>
+
+        <!-- Booking and reservation sub div slots -->
+        <template id="booking_modal_bk_day_slots">
+            <t t-foreach="day_slots" t-as="d_slot">
+                <div t-attf-class="col-6 bk_slot_div1 #{'col-md-3' if len(day_slots) > 3 else 'col-md-4'}">
+                    <span t-att-class="'bk_slot_div bk_active' if day_slots[0] == d_slot else 'bk_slot_div'" t-att-data-time_slot_id="d_slot['slot']['id']" t-att-data-slot_plans="d_slot['plans']">
+                        <t t-esc="d_slot['slot']['name']"/>
+                    </span>
+                </div>
+            </t>
+            <div t-if="not day_slots" class="col-12 text-center no_day_slots">
+                <span>No hay citas disponibles para este fecha, por favor seleccione otra fecha.</span>
+            </div>
+        </template>
+
+        <!-- Booking and reservation sub div slots n plans -->
+        <template id="booking_modal_bk_slots_n_plans_div">
+            <div class="row bk_border bk_modal_slots">
+                <t t-call="website_booking_system.booking_modal_bk_day_slots"/>
+            </div>
+            <div class="row bk_model_plans" style="margin: 0 15px;">
+                <t t-if="day_slots" t-call="website_booking_system.booking_sel_plans">
+                    <t t-set="d_plans" t-value="day_slots[0]['plans']"/>
+                </t>
+            </div>
+        </template>
+
+        <!-- Booking and reservation sub div for days -->
+        <template id="booking_modal_bk_week_days">
+            <div style="width: 100%">
+                <t t-foreach="week_days" t-as="w_day">
+                    <t t-set="s_date" t-value="w_day['date_str'].split(' ')"/>
+                    <div t-att-class="'bk_days bk_active' if w_day['day'] == current_day else 'bk_days' if w_day['state'] == 'active' else 'bk_days bk_disable'" t-att-data-w_day="w_day['day']" t-att-data-w_date="w_day['date']">
+                        <div class="text-uppercase"><t t-esc="w_day['day']"/></div>
+                        <div class="text-capitalize"><span class="d-none d-sm-block"><t t-esc="s_date[1]"/>&#32;</span><span t-esc="s_date[0]"/></div>
+                    </div>
+                </t>
+            </div>
+        </template>
+
+        <!-- Booking and reservation main div for days, slots n plans -->
+        <template id="booking_modal_bk_slots_main_div">
+            <div class="row bk_border bk_week_days" style="padding-left: 0px;margin: 0 15px;">
+                <t t-call="website_booking_system.booking_modal_bk_week_days"/>
+            </div>
+            <div class="container bk_slots_n_plans_div">
+                <t t-call="website_booking_system.booking_modal_bk_slots_n_plans_div"/>
+            </div>
+        </template>
+
+        <!-- Booking and reservation model -->
+        <template id="booking_and_reservation_modal_temp">
+            <div class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close fa fa-times" data-dismiss="modal" aria-hidden="false"/>
+                            <div class="bk_modal_heading">Agenda tu cita</div>
+                        </div>
+                        <div t-if="booking_status" class="modal-footer">
+                            <div class="row booking_modal_footer">
+                                <div class="col-12 d-block d-sm-none">
+                                    <span class="pull-left" style="font-size: 16px;font-weight: bold;">
+                                        Selecciona día:
+                                    </span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="pull-left d-none d-sm-block" style="font-size: 16px;font-weight: bold;">
+                                        Selecciona día:
+                                    </span>
+                                    <span class="pull-left d-block d-sm-none" style="padding-bottom: 5px;">
+                                        <t t-foreach="week_days" t-as="w_day">
+                                            <t t-if="w_day['day'] == current_day">
+                                                <t t-set="s_date" t-value="w_day['date_str'].split(' ')"/>
+                                                <span id="dsply_bk_date"><t t-esc="s_date[1]"/>, <t t-esc="s_date[2]"/></span>
+                                            </t>
+                                        </t>
+                                    </span>
+                                    <span class="pull-right select_bk_date" style="font-size: 16px;color: #1CBC8C;">
+                                        <div class='input-group date' id='bk_datepicker'  data-target-input="nearest" t-att-data-bk_end_date="end_date" t-att-data-bk_default_date="default_date" t-att-data-w_c_days="w_closed_days">
+                                            <input type="text" name="bk_date" id="bk_sel_date" data-target="#bk_datepicker" style="display: none;"/>
+                                            <a class="input-group-append" data-target="#bk_datepicker" data-toggle="datetimepicker">
+                                                Selecciona Fecha
+                                            </a>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="container bk_slots_main_div">
+                                    <t t-call="website_booking_system.booking_modal_bk_slots_main_div"/>
+                                </div>
+                                <div class="col-12 bk_model_cart" style="margin-top: 20px;">
+                                    <!-- <div class="row" style="margin-bottom: 7px;padding: 0 15px;">
+                                        <t t-set="max_bk_qty" t-value="product.max_bk_qty if product.max_bk_qty > 0 else 5"/>
+                                        <div class="col-md-7 col-12" style="text-align: left;padding-left: 0;">
+                                            <div>
+                                                <span style="font-size: 16px;font-weight: 700;">Guest</span>
+                                                <span style="font-size: 14px;">(Maximum capacity is <t t-esc="max_bk_qty"/>)</span>
+                                            </div>
+                                            <div class="bk_qty_div">
+                                                <select class="bk_qty_sel" name="add_qty" required="1" style="width: 100%; height: 35px;cursor: pointer;">
+                                                    <t t-foreach="range(1, max_bk_qty+1)" t-as="bk_qty_optn">
+                                                        <option t-att-value="bk_qty_optn"><t t-esc="bk_qty_optn"/></option>
+                                                    </t>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-12 bk_total_price_div">
+                                            <span>Total: </span>
+                                            <span class="bk_total_price" t-esc="00.00" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                        </div>
+                                    </div> -->
+                                    <div class="row" style="padding: 0 15px;margin-bottom: 7px;">
+                                        <span class="bk_modal_err"/>
+                                    </div>
+                                    <div class="row" style="padding: 0 15px;">
+                                        <span class="btn btn-primary btn-lg bk_model_booking bk-submit">Agendar cita</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div t-else="" class="modal-footer">
+                            <div class="row booking_modal_footer">
+                                <div class="col-12" style="padding: 13px 24px;font-size: 16px;margin-bottom: 10px;color: #6c757d;">
+                                    Este producto no esta disponible para ser agendado, por favor trate más tarde.
+                                </div>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-danger mr4 pull-right" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Book Now button on Booking product page -->
+        <template id="booking_and_reservation_product" inherit_id="website_sale.product">
+            <xpath expr="//a[@id='add_to_cart']" position="attributes">
+                <attribute name="t-if">not product.is_booking_type</attribute>
+            </xpath>
+            <xpath expr="//a[@id='add_to_cart']" position="after">
+                <a t-if="product.is_booking_type" id="booking_and_reservation" class="btn btn-primary btn-lg mt8" href="#">Agendar cita</a>
+                <div t-if="product.is_booking_type" id="bk_n_res_loader" style="display:none;"/>
+                <div id="booking_modal" t-att-data-res_id="product.id"/>
+            </xpath>
+        </template>
+
+        <!-- <template id="booking_and_reservation_products_item" inherit_id="website_sale.products_item" active="True" customize_show="True" name="Show Booking Information">
+            <xpath expr="//form/div" position="before">
+                <div t-if="product.is_booking_type" class="mt8" style="width: 100%; height: 34px;">
+                    <div class="item oe_img_bg oe_custom_bg active pull-right" t-attf-style="background-image: url('/website_booking_system/static/src/img/bk_tag.png');width: 130px;height: inherit;"></div>
+                </div>
+            </xpath>
+        </template> -->
+    </data>
+</odoo>

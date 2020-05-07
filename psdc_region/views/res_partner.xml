@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="psdc_res_partner_form_view_inherit" model="ir.ui.view">
+            <field name="name">PSDC Res Partner Form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='sector_id']" position="after">
+                    <br />
+                    <label for='region_id' string='Region: ' style="font-weight:bold;" />
+                    <br />
+                    <field name="region_id" options="{ 'no_create': True, 'no_open': True }" required="1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

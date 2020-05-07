@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+        <record id="inherit_product_template_booking_form_view" model="ir.ui.view">
+            <field name="name">product.template.booking.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button string="Revisar cantidad disponible" type="object" name="get_available_bk_qty" attrs="{'invisible':[('is_booking_type','=',False)]}"/>
+                    <!-- Check Booking Quantity -->
+                </xpath>
+                <xpath expr="//div[@name='options']" position="inside">
+                    <div>
+                        <field name="is_booking_type"/>
+                        <label for="is_booking_type"/>
+                    </div>
+                </xpath>
+                <xpath expr="//notebook" position="inside">
+                    <page name="booking_and_reservation" string="Citas" attrs="{'invisible':[('is_booking_type','=',False)]}">
+                        <group>
+                            <group>
+                                <field name="br_start_date" widget="date" autocomplete="off" options='{"format": "dd/MM"}' attrs="{'required' : [('is_booking_type','=',True)]}"/>
+                            </group>
+                            <group>
+                                <field name="br_end_date" widget="date"  options='{"format": "dd/MM"}' autocomplete="off" attrs="{'required' : [('is_booking_type','=',True)]}"/>
+                            </group>
+                        </group>
+                        <group string="Configurar dias y fechas">
+                            <field name="booking_day_slot_ids" nolabel="1"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

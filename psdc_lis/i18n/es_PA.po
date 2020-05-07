@@ -1,0 +1,672 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* psdc_lis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-24 18:39+0000\n"
+"PO-Revision-Date: 2020-04-24 14:21-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_PA\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de excepción de actividad"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_state
+msgid "Activity State"
+msgstr "Estado de actividad"
+
+#. module: psdc_lis
+#: model_terms:ir.actions.act_window,help:psdc_lis.lis_patients_action
+msgid "Add a New Patient"
+msgstr "Añadir un nuevo paciente"
+
+#. module: psdc_lis
+#: model_terms:ir.actions.act_window,help:psdc_lis.lis_requests_action
+msgid "Add a New Request"
+msgstr "Añadir una nueva solicitud"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+msgid "Archived"
+msgstr "Archivados"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "Recuento de adjuntos"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__booked_slot_id
+msgid "Booked Slot"
+msgstr "Slot reservada"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__booking_date
+msgid "Booking Date"
+msgstr "Fecha de reserva"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__booking_slot_id
+msgid "Booking Slot"
+msgstr "Slot reservado"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_calendar_view
+msgid "Calendar View"
+msgstr "Vista de calendario"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: psdc_lis
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_fatigue
+msgid "Cansancio"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_coloration
+msgid "Coloración azulada en los labios o el rostro"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+msgid "Companies"
+msgstr "Compañias"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__company_id
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+msgid "Company"
+msgstr "Compañia"
+
+#. module: psdc_lis
+#: model:ir.ui.menu,name:psdc_lis.lis_config_menu
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_confusion
+msgid "Confusión o dificultad para estar alerta"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model,name:psdc_lis.model_res_partner
+msgid "Contact"
+msgstr "Cóntacto"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+msgid "Country"
+msgstr "País"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__covid_test
+msgid "Covid-19 Test"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Date Execution"
+msgstr "Fecha de ejecución "
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Date Planned"
+msgstr "Fecha planeada"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Date Request"
+msgstr "Fecha de solicitud"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Dates Information"
+msgstr "Información de fechas"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_diarrhea
+msgid "Diarrea"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_abdominal_pain
+msgid "Dolor Abdominal"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_headache
+msgid "Dolor de Cabeza"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_chest_pain
+msgid "Dolor o Presión constante en el pecho"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_muscle_pains
+msgid "Dolores Musculares"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__state__done
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Done"
+msgstr "Hecho"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_shaking_chills
+msgid "Escalofrios"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__date_execution
+msgid "Execution Date"
+msgstr "Fecha de ejecución"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_shortness_of_breath
+msgid "Falta de aire"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_fever
+msgid "Fiebre"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Future Request"
+msgstr "Solicitud futura "
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_irritated_throat
+msgid "Garganta Irritada"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__id
+msgid "ID"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__message_needaction
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__message_has_error
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__state__in_process
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "In Process"
+msgstr "En Proceso"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+msgid "Individuals"
+msgstr "Individuales"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_res_partner_tree_view_inherit
+msgid "Information"
+msgstr "Información "
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_res_partner__is_patient
+#: model:ir.model.fields,field_description:psdc_lis.field_res_users__is_patient
+msgid "Is Patient"
+msgstr "Es paciente"
+
+#. module: psdc_lis
+#: code:addons/psdc_lis/models/sale.py:0
+#, python-format
+msgid "Lab Request"
+msgstr "Solicitud de Lab"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_sale_order_line__lis_request_line
+msgid "Lab Request Lines"
+msgstr "Linea de solicitudes"
+
+#. module: psdc_lis
+#: model:ir.ui.menu,name:psdc_lis.menu_lis_root
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_res_partner_tree_view_inherit
+msgid "Laboratory"
+msgstr "Laboratorio "
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__state__draft
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "New"
+msgstr "Nuevo"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__covid_test__no
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__traveled__no
+msgid "No"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__note
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__other_symptom
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Note"
+msgstr "Nota"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.actions.act_window,help:psdc_lis.lis_patients_action
+msgid ""
+"Odoo helps you easily track all activities related to a patient:\n"
+"                  Current Patient Status, Discussions and History of Patient, etc."
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.actions.act_window,help:psdc_lis.lis_requests_action
+msgid ""
+"Odoo helps you easily track all activities related to a request:\n"
+"                  Current Request Status, Discussions and History of Request, etc."
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__sale_order_id
+msgid "Order Reference"
+msgstr "Orden de referencia "
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Otros Sintomas"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Overdue Request"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__partner_id
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: psdc_lis
+#: model:ir.actions.act_window,name:psdc_lis.lis_patients_action
+#: model:ir.ui.menu,name:psdc_lis.lis_patient_menu
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_tree_view
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_tree_view
+msgid "Patients"
+msgstr "Pacientes"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_lost_of_smell
+msgid "Perdida de Olfato"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_loss_of_taste
+msgid "Perdida del Gusto"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__plan_id
+msgid "Plan"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__date_planned
+msgid "Planned Date"
+msgstr "Fecha planeada"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__product_id
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Product"
+msgstr "Producto "
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__quantity
+#: model:ir.model.fields,field_description:psdc_lis.field_sale_order_line__lis_quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Question"
+msgstr "Preguntas"
+
+#. module: psdc_lis
+#: model:ir.actions.act_window,name:psdc_lis.lis_requests_action
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_pivot_view
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_sale_order_form_view
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Request"
+msgstr "Solicitud"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__date_request
+msgid "Request Date"
+msgstr "Fecha de solicitud"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Request Detail"
+msgstr "Detalles de solicitud"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_sale_order__lis_count
+msgid "Request Lab Count"
+msgstr "Conteo de solicitudes"
+
+#. module: psdc_lis
+#: model:ir.model,name:psdc_lis.model_lis_request
+msgid "Request Laboratory"
+msgstr "Solicitudes de laboratorio"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__name
+msgid "Request Reference"
+msgstr "Referencias de solicitudes"
+
+#. module: psdc_lis
+#: model:ir.ui.menu,name:psdc_lis.lis_requests_menu
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_graph_view
+msgid "Requests"
+msgstr "Solicitudes"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__order_id
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Sale Order"
+msgstr "Orden de venta"
+
+#. module: psdc_lis
+#: model:ir.model,name:psdc_lis.model_sale_order
+msgid "Sales Order"
+msgstr "Ordenes de ventas"
+
+#. module: psdc_lis
+#: model:ir.model,name:psdc_lis.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de orden de venta"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__sale_line_id
+msgid "Sales Order Lines"
+msgstr "Líneas de ordenes de venta"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Se ha realizado la prueba de COVID-19 previamente"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+msgid "Search Patient"
+msgstr "Buscar paciente"
+
+#. module: psdc_lis
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__covid_test__yes
+#: model:ir.model.fields.selection,name:psdc_lis.selection__lis_request__traveled__yes
+msgid "Si"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Sintomas"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__symptom_ids
+msgid "Symptom"
+msgstr "Sintomas"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_filter_view
+msgid "Tag"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_requests_filter_view
+msgid "Today Request"
+msgstr "Solicitud de hoy"
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_cough
+msgid "Tos"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__traveled
+msgid "Traveled"
+msgstr "Viajó"
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "Viajó en los ultimos 14 días"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__is_threw_up
+msgid "Vomitos"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,field_description:psdc_lis.field_lis_request__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: psdc_lis
+#: model:ir.model.fields,help:psdc_lis.field_lis_request__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_patients_kanban_view
+msgid "at"
+msgstr "a"
+
+#. module: psdc_lis
+#: model_terms:ir.ui.view,arch_db:psdc_lis.lis_request_form_view
+msgid "write more detail of the request ..."
+msgstr ""

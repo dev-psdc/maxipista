@@ -1,0 +1,232 @@
+/* Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) */
+/* See LICENSE file for full copyright and licensing details. */
+/* @License       : https://store.webkul.com/license.html */
+@media (min-width: 1068px){
+    .modal-dialog {
+        height: 1500px;
+        max-height: 1700px;
+        max-width: 600px;
+        margin: 30px auto;
+    }
+}
+
+.bk_modal_slots{
+    padding: 10px 0px;
+    border-top: 0;
+    margin: 0 15px;
+    max-height: 133px;
+    overflow-y: auto;
+}
+.bk_plans_m_div{
+    margin: 0;
+    padding: 7px 0;
+    box-shadow: 0 0 3px 0 rgba(111,111,111,0.5);
+    max-height: 845px;
+    overflow-y: auto;
+}
+.bk-panel {
+    z-index: 5;
+    position: relative;
+    margin-right: 10px;
+    opacity: 0.75;
+}
+.bk-status {
+    background: #00A09D;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 18px;
+    display: inline-block;
+    padding: 3px 8px 4px;
+    border-radius: 2px;
+}
+.bk_days {
+    width: 14.28%;
+    float: left;
+    box-shadow: 0 0 2px 0 rgba(196,196,196,0.50);
+    text-align: center;
+    padding: 18px 0;
+    color: #297AEE;
+    cursor: pointer;
+}
+.bk_days_left{
+    margin-right:  9px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 rgba(196,196,196,0.50);
+    padding-left: 10px;
+    padding-right:  10px;
+}
+.bk_days_right{
+    margin-left:  8px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 rgba(196,196,196,0.50);
+    padding-left: 10px;
+    padding-right:  10px;
+}
+.bk_modal_heading{
+    color: #297AEE;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.bk_border {
+    border: 1px solid #D6D6D6;
+    box-shadow: 0 0 2px 0 rgba(196,196,196,0.50);
+}
+.bk_slot_div{
+    padding: 6px 11px;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #555555;
+    text-align: center;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bk_plan_base_price {
+    font-size: 15px;
+    color: #333333;
+    padding: 5px 12px;
+    margin: 10px 0;
+    color: #333333;
+    box-shadow: 0 0 3px 0 rgba(111,111,111,0.5);
+}
+.bk_plan_div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 rgba(169,169,169,0.50);
+    border-radius: 4px;
+    border: 1px solid #B6B6B6;
+    background: #FFFFFF;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.bk_active {
+    background: #297AEE;
+    color: #FFFFFF;
+}
+.bk_disable {
+    cursor: not-allowed;
+    color: gray;
+}
+.bk_plan_avl {
+    color: #1CBC8C;
+    font-size: 22px;
+}
+.bk_plan_sold {
+    color: #F86261;
+    font-size: 22px;
+}
+.bk_total_price_div {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    background: #F5F8F9;
+    border: 1px solid #D6D6D6;
+    box-shadow: 0 0 2px 0 rgba(196,196,196,0.50);
+    border-radius: 4px;
+}
+.bk_model_booking {
+    float: left;
+}
+#booking_modal .input-group-addon {
+    font-size: 16px !important;
+    color: #1CBC8C;
+    width : unset;
+    float : right;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+}
+.bk_week_days{
+    padding-left: 1px;
+}
+.bk_week_days .bk_days:hover, .bk_week_days .bk_days:focus{
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+.bk_week_days .bk_active:hover, .bk_week_days .bk_active:focus{
+    background: #297AEE;
+    color: #FFFFFF;
+}
+.bk_week_days .nav > li > .bk_disable:hover, .bk_week_days .nav > li > .bk_disable:focus{
+    background: white;
+    color: gray;
+}
+#booking_modal input[type="radio"]:checked ~ .bk_plan_div {
+    background: #297AEE;
+    border: 1px solid #77A1DE;
+    color: #FFFFFF;
+}
+.bk_modal_err {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    margin: 0;
+    padding: 7px 20px;
+    float: left;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: none;
+}
+.bk_cart_plan {
+    width: fit-content;
+    background: #297AEE;
+    border: 1px solid #297AEE;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 3px 10px;
+}
+.bk_slot_div1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 8px 0;
+}
+.bk_qty_div {
+    padding-right: 30px;
+}
+.cart-line-error-md {
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    margin-top: -35px;
+}
+
+.cart-line-error-xs {
+    color: red;
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    margin-top: -37px;
+}
+.no_day_slots{
+    color: gray;
+    margin: 20px 0px;
+}
+#bk_n_res_loader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(/website_booking_system/static/src/img/bk_loader.gif) center no-repeat rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 1px white;
+}
+.booking_modal_footer {
+    width:-webkit-fill-available;
+    width:-moz-available;
+}

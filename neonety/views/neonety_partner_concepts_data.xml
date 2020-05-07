@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate='1'>
+		<record model="neonety.partner.concept" id="neonety.partner_concept_1">
+			<field name='name'>Concepto A</field>
+			<field name='status'>1</field>
+		</record>
+		<record model="neonety.partner.concept" id="neonety.partner_concept_2">
+			<field name='name'>Concepto B</field>
+			<field name='status'>1</field>
+		</record>
+	</data>
+</odoo>

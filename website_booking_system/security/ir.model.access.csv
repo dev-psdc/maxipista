@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+day_slot_config_pub_user,day_slot_config_pub_user,website_booking_system.model_day_slot_config,,1,0,0,0
+booking_slot_pub_user,booking_slot_pub_user,website_booking_system.model_booking_slot,,1,0,0,0
+booking_time_slot_pub_user,booking_time_slot_pub_user,website_booking_system.model_booking_time_slot,,1,0,0,0
+booking_plan_pub_user,booking_plan_pub_user,website_booking_system.model_booking_plan,,1,0,0,0
+
+day_slot_config_sale_manager,day_slot_config_sale_manager,website_booking_system.model_day_slot_config,sales_team.group_sale_manager,1,1,1,1
+booking_slot_sale_manager,booking_slot_sale_manager,website_booking_system.model_booking_slot,sales_team.group_sale_manager,1,1,1,1
+booking_time_slot_sale_manager,booking_time_slot_sale_manager,website_booking_system.model_booking_time_slot,sales_team.group_sale_manager,1,1,1,1
+booking_plan_sale_manager,booking_plan_sale_manager,website_booking_system.model_booking_plan,sales_team.group_sale_manager,1,1,1,1
+lis_symptom_sale_manager,lis_symptom_sale_manager,website_booking_system.model_lis_symptom,sales_team.group_sale_manager,1,1,1,1

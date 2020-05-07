@@ -1,0 +1,34 @@
+<odoo>
+  <data>
+
+      <record id="product_template_lab_form_view_inherit" model="ir.ui.view">
+          <field name="name">product.template.lab.form</field>
+          <field name="model">product.template</field>
+          <field name="inherit_id" ref="product.product_template_form_view"/>
+          <field name="arch" type="xml">
+              <xpath expr="//div[@name='options']" position="inside">
+                  <div>
+                      <field name="is_product_lab"/>
+                      <label for="is_product_lab"/>
+                  </div>
+              </xpath>
+              <xpath expr="//notebook" position="inside">
+                  <page name="laboratory" string="Laboratory" attrs="{'invisible':[('is_product_lab','=',False)]}">
+                      <group>
+                          <group>
+                              <field name="lis_max"/>
+                          </group>
+                          <group>
+                              <field name="lis_availability"/>
+                          </group>
+                      </group>
+                      <group>
+
+                      </group>
+                  </page>
+              </xpath>
+          </field>
+      </record>
+
+  </data>
+</odoo>

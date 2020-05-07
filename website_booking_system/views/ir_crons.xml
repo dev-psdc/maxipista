@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record model="ir.cron" id="unreserve_booking_product_qty">
+            <field name="name">Unreserve Booking Product Quantities From Cart</field>
+            <field name="active" eval="True"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="state">code</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="model_id" ref="model_sale_order_line"/>
+            <field name="code">model.remove_booking_product_draft_order_lines()</field>
+        </record>
+    </data>
+</odoo>

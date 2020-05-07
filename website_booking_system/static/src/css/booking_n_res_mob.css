@@ -1,0 +1,97 @@
+/* Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) */
+/* See LICENSE file for full copyright and licensing details. */
+/* @License       : https://store.webkul.com/license.html */
+@media screen and (max-width: 1768px) {
+    .bk_plan_avl{
+        font-size: 16px;
+        color: #1CBC8C;
+    }
+    .bk_plan_sold {
+        color: #F86261;
+        font-size: 16px;
+    }
+    .bk_days {
+        padding: 16px 0;
+    }
+    .bk_days > div:nth-child(1) {
+        font-size: 12px;
+        text-transform: capitalize !important;
+    }
+    .bk_plan_div{
+        padding: 5px 10px;
+        text-align: left;
+    }
+    .bk_slot_div1 {
+        padding: 0;
+    }
+    .bk_plan_base_price {
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+    .bk_qty_div {
+        padding-right: 0;
+    }
+    .bk_model_cart > .row:nth-child(1) > div:nth-child(1) {
+        padding: 0;
+    }
+    .bk_total_price_div{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 15px;
+    }
+    .bk_model_plans > div:nth-child(2) {
+        padding: 10px;
+    }
+    .bk_model_plans > div:nth-child(2) > .container .col-12{
+        padding: 5px 10px;
+    }
+    .bk_model_booking {
+        width: 100%;
+        padding: 6px;
+    }
+    .bk_week_days {
+        padding-left: 0;
+    }
+    .bk_week_days > .navbar-nav {
+        width: 100%;
+        margin: 0;
+    }
+    .bk_week_days > .navbar-nav > li {
+        float: left;
+    }
+    .bk_week_days > .navbar-nav > li > a {
+        padding: 4px 9px !important;
+        font-size: 8px;
+    }
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid black;
+      margin-left: 8px;
+    }
+    .bk_slots_main_div:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 32px;
+        top: 110px;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom-color: lightgrey;
+    }
+
+    .bk_slots_main_div:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 33px;
+        top: 112px;
+        width: 0;
+        height: 0;
+        border: 9px solid transparent;
+        border-bottom-color: white;
+    }
+}

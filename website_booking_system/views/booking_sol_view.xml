@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+        <record id="wk_booking_order_form" model="ir.ui.view">
+            <field name="name">Booking Order Form</field>
+            <field name="model">sale.order</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="50"/>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="is_booking_type" invisible="1"/>
+                </field>
+                <xpath expr="//field[@name='order_line']//tree//field[@name='product_id']" position="attributes">
+                    <attribute name="domain">[('is_booking_type','=',True)]</attribute>
+                    <attribute name="context">{'default_is_booking_type':True}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='order_line']//tree//field[@name='product_uom_qty']" position="after">
+                    <field name="booking_date" required="1" options="{'no_open':True,'no_create_edit':True,'no_quick_create':True,}"/>
+                    <field name="booking_slot_id" required="1" options="{'no_open':True,'no_create_edit':True,'no_quick_create':True,}"/>
+                </xpath>
+                <xpath expr="//form/group/group[2]" position="inside">
+                    <separator string="Booking Details"/>
+                    <field name="booking_date"/>
+                    <field name="booked_slot_id" options="{'no_open':True,}"/>
+                    <field name="booked_plan_id" options="{'no_open':True,}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="wk_booking_product_template_action_website" model="ir.actions.act_window">
+            <field name="name">Productos para citas</field>
+            <field name="res_model">product.template</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="context">{'default_type':'service','default_is_booking_type':True}</field>
+            <field name="domain">[('is_booking_type','=',True)]</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new product
+                </p><p>
+                    A product can be either a physical product or a service that you sell to your customers.
+                </p>
+            </field>
+        </record>
+
+        <record id="wk_booking_product_order_line_form_view" model="ir.ui.view">
+            <field name="name">booking.product.sale.order.form</field>
+            <field name="model">sale.order.line</field>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <form string="Sales Order Lines" create="false" edit="false" default_order="id desc">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="product_id" options="{'no_open':True}"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="order_id" domain="[('state','!=','done')]" options="{'no_open':True}" readonly="1"/>
+                                <field name="order_partner_id"/>
+                                <field name="create_date"/>
+                                <field name="company_id" groups="base.group_multi_company" readonly="1"/>
+                                <field name="state" string="Order State"/>
+                            </group>
+                            <group>
+                                <field name="price_unit"/>
+                                <field name="discount" groups="product.group_discount_per_so_line" readonly="1"/>
+                                <label for="product_uom_qty"/>
+                                <div>
+                                    <field name="product_uom_qty" readonly="1" class="oe_inline"/>
+                                    <field name="product_uom_category_id" invisible="1"/>
+                                    <field name="product_uom" class="oe_inline"/>
+                                     <!-- groups="product.group_uom" -->
+                                </div>
+                                <field name="price_subtotal"/>
+                            </group>
+                        </group>
+                        <group string="Booking Details" col="4">
+                            <field name="patient_name"/>
+                            <field name="booking_date"/>
+                            <field name="covid_test" widget="radio"/>
+                            <field name="traveled" widget="radio"/>
+                            <field name="other_symptom"/>
+                            <field name="symptom_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                            <field name="booked_slot_id" options="{'no_create_edit': True, 'no_open': True}"/>
+                            <field name="booked_plan_id" options="{'no_create_edit': True, 'no_open': True}"/>
+                        </group>
+                        <separator string="Description"/>
+                        <field name="name"/>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="wk_booking_product_order_line_tree_view" model="ir.ui.view">
+            <field name="name">booking.product.order.line</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <tree string="Sales Order Lines" create="0" edit="0" default_order="id desc">
+                    <field name="order_id"/>
+                    <field name="order_partner_id"/>
+                    <field name="product_id" invisible="0"/>
+                    <field name="booked_slot_id"/>
+                    <field name="booked_plan_id"/>
+                    <field name="booking_date"/>
+                    <field name="product_uom_qty" string="Qty"/>
+                    <field name="product_uom" string="Unit of Measure" groups="product.group_uom"/>
+                    <field name="price_subtotal" sum="Total"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- ~~~~~~~~~~~~~~~~~ CALENDAR VIEW ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <record id="wk_booking_product_order_line_calendar_view" model="ir.ui.view">
+            <field name="name">booking.product.order.line.calendar</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <calendar date_start="booking_date" string="Booking Calendar"
+                    mode="month" color="booked_slot_id" quick_add="False">
+                    <field name="order_partner_id"/>
+                    <field name="order_id"/>
+                    <field name="booking_slot_id"/>
+                </calendar>
+            </field>
+        </record>
+
+        <record id="wk_booking_orders_action" model="ir.actions.act_window">
+            <field name="name">Citas agendadas</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('is_booking_type','=',True),('state','!=','draft')]</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_empty_folder">
+                    There is no booking order from the website
+                </p>
+            </field>
+            <field
+				name="view_ids"
+				eval="[(5, 0, 0),
+                    (0, 0, {'sequence': 1, 'view_mode': 'kanban', 'view_id': ref('sale.view_sale_order_kanban')}),
+                    (0, 0, {'sequence': 2, 'view_mode': 'tree', 'view_id': ref('sale.view_order_tree')}),
+					(0, 0, {'sequence': 3, 'view_mode': 'form', 'view_id': ref('wk_booking_order_form')}),
+				]"/>
+        </record>
+
+        <!--  ~~~~~~~~~~~~~~~~~ Filter VIEW ~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <record id="wk_booking_order_line_filter_view" model="ir.ui.view">
+            <field name="name">Booking Orders Line filter View</field>
+            <field name="model">sale.order.line</field>
+            <field name="mode">primary</field>
+            <!-- <field name="priority" eval="100"/> -->
+            <field name="inherit_id" ref="sale.view_sales_order_line_filter"/>
+             <field name="arch" type="xml">
+                 <xpath expr="//search" position="inside">
+                    <filter name="booking_date_today" string="Today" domain="[('booking_date', '=', current_date)]"/>
+                 </xpath>
+                  <xpath expr="//search//group//filter[1]" position="attributes">
+                      <attribute name="name">group_product</attribute>
+                 </xpath>
+                 <xpath expr="//search//group" position="inside">
+                    <filter name="group_booking_date" string="Booking Date" domain="[]" context="{'group_by':'booking_date'}"/>
+                    <filter name="group_booking_slot" string="Booking Slot" domain="[]" context="{'group_by':'booked_slot_id'}"/>
+                    <filter name="group_booking_plan" string="Booking Plan" domain="[]" context="{'group_by':'booked_plan_id'}"/>
+                 </xpath>
+             </field>
+        </record>
+
+        <record id="wk_booking_order_lines_action" model="ir.actions.act_window">
+            <field name="name">Calendario de Citas</field>
+            <field name="res_model">sale.order.line</field>
+            <field name="view_mode">tree,form,calendar</field>
+            <field name="domain">[('booking_slot_id','!=',False)]</field>
+            <field name="context">{'search_default_group_booking_date':1,'search_default_group_booking_slot':2,'search_default_group_booking_plan':3}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_empty_folder">
+                    There is no booking order line from the website
+                </p>
+            </field>
+            <field
+                name="view_ids"
+                eval="[(5, 0, 0),
+                    (0, 0, {'sequence': 1, 'view_mode': 'calendar', 'view_id': ref('website_booking_system.wk_booking_product_order_line_calendar_view')}),
+                    (0, 0, {'sequence': 2, 'view_mode': 'tree', 'view_id': ref('website_booking_system.wk_booking_product_order_line_tree_view')}),
+                    (0, 0, {'sequence': 3, 'view_mode': 'form', 'view_id': ref('website_booking_system.wk_booking_product_order_line_form_view')}),
+                ]"/>
+        </record>
+
+        <!--  ~~~~~~~~~~~~~~~~~ Booking Order Pivot VIEW ~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <record id="wk_booking_analysis_pivot_view" model="ir.ui.view">
+            <field name="name">Booking Orders Analysis Pivot View</field>
+            <field name="model">sale.order.line</field>
+             <field name="arch" type="xml">
+                 <pivot string="Booking Orders Pivot View" disable_linking="True">
+                     <field name="product_id" type="row"/>
+                     <field name="booking_date" type="col"/>
+                     <field name="product_uom_qty" type="measure"/>
+                     <field name="price_total" type="measure"/>
+                 </pivot>
+             </field>
+        </record>
+
+        <!--  ~~~~~~~~~~~~~~~~~ Booking Order Graph VIEW ~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <record id="wk_booking_analysis_graph_view" model="ir.ui.view">
+            <field name="name">Booking Orders Analysis Graph View</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <graph string="Booking Orders Graph View" type="bar">
+                    <field name="product_id" type="row"/>
+                    <field name="price_total" type="measure"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="wk_booking_analysis_action" model="ir.actions.act_window">
+            <field name="name">Analisis de Citas</field>
+            <field name="res_model">sale.order.line</field>
+            <field name="view_mode">pivot,graph</field>
+            <field name="domain">[("product_id.is_booking_type","=",True)]</field>
+            <field name="context">{'search_default_group_product':1,'search_default_group_booking_date':2}</field>
+            <field name="view_id" ref="website_booking_system.wk_booking_analysis_pivot_view"/>
+        </record>
+
+        <menuitem
+            id="booking_orders_main_menu"
+            name="Citas"
+            parent="wk_booking_menu_root"
+            sequence="1"
+        />
+        <menuitem
+            id="wk_booking_orders_menu"
+            name="Citas"
+            action="wk_booking_orders_action"
+            parent="website_booking_system.booking_orders_main_menu"
+            sequence="1"
+        />
+        <menuitem
+            id="wk_booking_order_lines_menu"
+            name="Calendario de Citas"
+            action="wk_booking_order_lines_action"
+            parent="website_booking_system.booking_orders_main_menu"
+            sequence="2"
+        />
+
+        <menuitem
+            id="booking_products_main_menu"
+            name="Productos"
+            parent="wk_booking_menu_root"
+            sequence="3"
+        />
+
+        <menuitem
+            id="wk_booking_products_menu"
+            name="Productos"
+            action="wk_booking_product_template_action_website"
+            parent="website_booking_system.booking_products_main_menu"
+            sequence="1"
+        />
+
+        <menuitem
+            id="wk_booking_orders_reporting_main_menu"
+            name="Reportes"
+            parent="website_booking_system.wk_booking_menu_root"
+            sequence="2"
+        />
+
+        <menuitem
+            id="wk_booking_analysis_menu"
+            name="Analisis de Citas"
+            action="wk_booking_analysis_action"
+            parent="website_booking_system.wk_booking_orders_reporting_main_menu"
+            sequence="1"
+        />
+
+    </data>
+</odoo>

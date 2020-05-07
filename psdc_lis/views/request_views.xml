@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        
+        <record id="lis_requests_tree_view" model="ir.ui.view">
+            <field name="name">Lis Requests Tree</field>
+            <field name="model">lis.request</field>
+            <field name="arch" type="xml">
+                <tree string="Patients">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="product_id"/>
+                    <field name="order_id"/>
+                    <field name="sale_order_id"/>
+                    <field name="date_planned"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Kanban View  -->
+        <record id="lis_request_kanban_view" model="ir.ui.view">
+            <field name="name">Lis Requests Kanban</field>
+            <field name="model">lis.request</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile">
+                    <field name="name"/>
+                    <field name="partner_id" readonly="1"/>
+                    <field name="product_id"/>
+                    <field name="order_id"/>
+                    <field name="state"/>
+                    <field name="date_planned"/>
+                    <progressbar field="state" colors='{"done": "success", "new": "warning", "in_process": "primary", "cancel": "danger"}'/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_card oe_kanban_global_click">
+                                <div class="o_kanban_record_top mb16">
+                                    <div class="o_kanban_record_headings mt4">
+                                        <strong class="o_kanban_record_title"><span><t t-esc="record.product_id.value"/></span></strong>
+                                    </div>
+                                    <strong><field name="name"/></strong>
+                                </div>
+                                <div class="o_kanban_record_bottom">
+                                    <div class="oe_kanban_bottom_left">
+                                        <span><t t-esc="record.name.value"/> <t t-esc="record.date_planned.value and record.date_planned.value.split(' ')[0] or False"/></span>
+                                        <field name="partner_id"/>
+                                    </div>
+                                    <div class="oe_kanban_bottom_right">
+                                        <field name="state" widget="label_selection" options="{'classes': {'draft': 'warning', 'cancel': 'danger', 'done': 'success', 'in_process': 'primary'}}"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="lis_request_form_view" model="ir.ui.view">
+    	    <field name="name">lis.request.form</field>
+    	    <field name="model">lis.request</field>
+            <field name="arch" type="xml">
+      	        <form string="Request">
+        	        <header>
+                        <button name="button_confirmed" type="object" states='draft' string="Confirmed" class="oe_highlight" groups="psdc_lis.group_psdc_lis_administrative"/>
+                        <button name="button_taken" type="object" states='confirmed' string="Taken" class="oe_highlight" groups="psdc_lis.group_psdc_lis_administrative"/>
+                        <button name="button_in_analysis" type="object" states='taken' string="In Analysis" class="oe_highlight" groups="psdc_lis.group_psdc_lis_administrative"/>
+                        <button name="button_sent" type="object" states='in_analysis' string="Sent" class="oe_highlight" groups="psdc_lis.group_psdc_lis_administrative"/>
+                        <button name="button_cancel" type="object" states='draft' string="Cancel" class="oe_highlight" groups="psdc_lis.group_psdc_lis_administrative"/>
+                        <button name="button_draft" type="object" states='confirmed' string="New" class="oe_highlight" groups="psdc_lis.group_psdc_lis_administrative"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,taken,in_analysis,sent" groups="psdc_lis.group_psdc_lis_administrative"/>
+                    </header>
+                    <sheet>
+                        <!-- Ribbon -->
+                        <widget name="web_ribbon" title="New" bg_color="bg-warning" attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+                        <widget name="web_ribbon" title="Confirmed" bg_color="bg-primary" attrs="{'invisible': [('state', '!=', 'confirmed')]}"/>
+                        <widget name="web_ribbon" title="Taken" bg_color="bg-secondary" attrs="{'invisible': [('state', '!=', 'taken')]}"/>
+                        <widget name="web_ribbon" title="In Analysis" bg_color="bg-info" attrs="{'invisible': [('state', '!=', 'in_analysis')]}"/>
+                        <widget name="web_ribbon" title="Sent" bg_color="bg-success" attrs="{'invisible': [('state', '!=', 'sent')]}"/>
+                        <widget name="web_ribbon" title="Canceled" bg_color="bg-danger" attrs="{'invisible': [('state', '!=', 'cancel')]}"/>
+
+                        <div class="oe_title">
+                            <h1># <field name="name" readonly="1"/></h1>
+                        </div>
+                        <group>
+                            <group name="request" string="Request Detail">
+                                <field name="partner_id"/>
+                                <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" invisible="1"/>
+                                <field name="sale_order_id" attrs="{'required': [('state', '=', 'draft')]}" />
+                                <field name="sale_line_id" domain="[('order_id', '=', sale_order_id)]"/>
+                                <field name="booking_date" attrs="{'required': [('state', '=', 'draft')]}"/>
+                                <field name="booking_slot_id" attrs="{'required': [('state', '=', 'draft')]}"/>
+                            </group>
+                            <group name="date" string="Dates Information">
+                                <field name="date_request"/>
+                                <field name="date_planned"/>
+                                <field name="date_execution" readonly="1"/>
+                                <field name="booked_slot_id" />
+                            </group>
+                        </group>
+                        <group name="more_description" string="Note">
+                            <group>
+                                <field name="product_id"/>
+                                <field name="plan_id"/>
+                            </group>
+                            <group>
+                                <field name="note" placeholder="write more detail of the request ..." colspan="4" nolabel="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="question" string="Question">
+                                <group>
+                                    <group>
+                                        <field name="covid_test" string="The COVID-19 test has been previously performed" widget="radio"/>
+                                        <field name="previous_test_result" string="Test Result" widget="radio" attrs="{'invisible': [('covid_test','!=', 'yes')], 'required': [('covid_test','=', 'yes')]}"/>
+                                        <field name="date_of_previous_test" string="Date of Previous Test" attrs="{'invisible': [('covid_test','!=', 'yes')], 'required': [('covid_test','=', 'yes')]}"/>
+                                    </group>
+                                    <group>
+                                        <field name="other_symptom" string="Symptom"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="result" string="Result" groups="psdc_lis.group_psdc_lis_laboratory">
+                                <group name="Result" groups="psdc_lis.group_psdc_lis_laboratory">
+                                    <group>
+                                        <field name="test_result" string="Test Result" widget="radio" groups="psdc_lis.group_psdc_lis_laboratory"/>
+                                    </group>
+                                    <group>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+					<div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+					</div>
+                </form>
+            </field>
+		</record>
+
+        <record id="lis_request_calendar_view" model="ir.ui.view">
+            <field name="name">Lis Request Calendar</field>
+            <field name="model">lis.request</field>
+            <field name="priority" eval="2"/>
+            <field name="arch" type="xml">
+                <calendar string="Calendar View" date_start="booking_date" color="product_id" hide_time="false" event_limit="5">
+                    <field name="company_id" invisible="1"/>
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="order_id"/>
+                    <field name="partner_id"/>
+                    <field name="booking_date"/>
+                    <field name="booking_slot_id"/>
+                </calendar>
+            </field>
+        </record>
+
+        <!-- Vista Search -->
+        <record id="lis_requests_filter_view" model="ir.ui.view">
+            <field name="name">Lis Patients Filter</field>
+            <field name="model">lis.request</field>
+            <field name="priority">50</field>
+            <field name="arch" type="xml">
+                <search string="Request">
+                    <field name="name"/>
+                    <field name="product_id"/>
+                    <field name="order_id"/>
+                    <field name="partner_id"/>
+                    <separator/>
+                    <filter string="Overdue Request" name="request_overdue" domain="[('date_planned', '&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="Today Request" name="request_today" domain="[('date_planned', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="Future Request" name="request_future" domain="[('date_planned', '&gt;', context_today().strftime('%Y-%m-%d'))]"/>
+                    <separator/>
+                    <group expand="0" string="Group By">
+                        <field string="Product" name="product_id" domain="[]" context="{'group_by': 'product_id'}"/>
+                        <field string="Sale Order" name="order_id" domain="[]" context="{'group_by': 'order_id'}"/>
+                        <field string="Patient" name="partner_id" domain="[]" context="{'group_by': 'partner_id'}"/>
+                        <separator/>
+                        <field string="Date Request" name="date_request" domain="[]" context="{'group_by': 'date_request'}"/>
+                        <field string="Date Planned" name="date_planned" domain="[]" context="{'group_by': 'date_planned'}"/>
+                        <field string="Date Execution" name="date_execution" domain="[]" context="{'group_by': 'date_execution'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="lis_requests_graph_view" model="ir.ui.view">
+            <field name="name">Lis Request Graph</field>
+            <field name="model">lis.request</field>
+            <field name="arch" type="xml">
+                <graph string="Requests"  type="pie">
+                    <field name="product_id" type="col"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="lis_request_pivot_view" model="ir.ui.view">
+            <field name="name">Lis Request Pivot</field>
+            <field name="model">lis.request</field>
+            <field name="arch" type="xml">
+                <pivot string="Request">
+                    <field name="product_id" type="row"/>
+                </pivot>
+            </field>
+        </record>
+
+      <!--  <record id="lis_request_dashboard_view" model="ir.ui.view">
+            <field name="name">Lis Request Dashboard</field>
+            <field name="model">lis.request</field>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <dashboard>
+                    <view type="graph" ref="psdc_lis.lis_requests_graph_view"/>
+                    <view type="pivot" ref="psdc_lis.lis_requests_pivot_view"/>
+                </dashboard>
+            </field>
+        </record> -->
+
+        <record id="lis_requests_action" model="ir.actions.act_window">
+            <field name="name">Request</field>
+            <field name="res_model">lis.request</field>
+            <field name="view_mode">tree,kanban,calendar,form,graph,pivot</field>
+            <field name="search_view_id" ref="lis_requests_filter_view"/>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                  Add a New Request
+                </p>
+                <p>
+                  Odoo helps you easily track all activities related to a request:
+                  Current Request Status, Discussions and History of Request, etc.
+                </p>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

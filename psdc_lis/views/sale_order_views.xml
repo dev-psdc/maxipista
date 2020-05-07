@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="lis_request_sale_order_form_view" model="ir.ui.view">
+        <field name="name">Sale Order Form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_view_invoice']" position="before">
+                <button class="oe_stat_button" name="action_view_request" type="object" icon="fa-file-pdf-o" attrs="{'invisible': [('lis_count', '=', 0)]}">
+                    <field string="Request" name="lis_count" widget="statinfo"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
