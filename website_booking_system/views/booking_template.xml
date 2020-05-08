@@ -300,11 +300,11 @@
                       <div>
                           <select name="region_id" class="form-control">
                               <option value=""> -- Seleccione Región -- </option>
-                              <t t-foreach="region" t-as="region_id">
+                             <!--  <t t-foreach="region" t-as="region_id">
                                   <option t-att-value="region_id.id">
                                       <t t-esc="region_id.name" />
                                   </option>
-                              </t>
+                              </t> -->
                           </select>
                       </div>
                   </div>

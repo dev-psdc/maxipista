@@ -51,6 +51,11 @@ class FilterData(http.Controller):
             for district in districts:
                 dists.append({district.id: district.name})
             data['districts'] = dists
+            regions = request.env['neonety.region'].sudo().search([('province_id', '=', int(province_id))])
+            region_lst = list()
+            for region in regions:
+                region_lst.append({region.id: region.name})
+            data['regions'] = region_lst
 
         district_id = post.get('district_id', False)
         if district_id:
@@ -59,13 +64,5 @@ class FilterData(http.Controller):
             for sector in sectors:
                 sectors_lst.append({sector.id: sector.name})
             data['sectors'] = sectors_lst
-
-        sector_id = post.get('sector_id', False)
-        if sector_id:
-            regions = request.env['neonety.region'].sudo().search([('sector_id', '=', int(sector_id))])
-            region_lst = list()
-            for region in regions:
-                region_lst.append({region.id: region.name})
-            data['regions'] = region_lst
 
         return data
