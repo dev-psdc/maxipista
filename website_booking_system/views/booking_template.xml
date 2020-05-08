@@ -233,7 +233,7 @@
                           <select name="country_id" class="form-control" disabled="true">
                               <option value=""> -- Seleccione País -- </option>
                               <t t-foreach="country" t-as="country_id">
-                                  <option t-att-value="country_id.id" t-att-selected="country_id.name == 'Panamá'">
+                                  <option t-att-value="country_id.id" t-att-selected="country_id.name == 'Panamá' or country_id.name == 'Panama'">
                                       <t t-esc="country_id.name"/>
                                   </option>
                               </t>
@@ -266,11 +266,11 @@
                       <div>
                           <select id="id_district" name="district_id" class="form-control">
                               <option value=""> -- Seleccione Distrito -- </option>
-                              <t t-foreach="district" t-as="district_id">
+                              <!-- <t t-foreach="district" t-as="district_id">
                                   <option class="sortMe" t-att-value="district_id.id">
                                       <t t-esc="district_id.name"/>
                                   </option>
-                              </t>
+                              </t> -->
                           </select>
                       </div>
                   </div>
@@ -283,11 +283,11 @@
                       <div>
                           <select id="id_sector" name="sector_id" class="form-control">
                               <option value=""> -- Seleccione Corregimiento -- </option>
-                              <t t-foreach="sector" t-as="sector_id">
+                              <!-- <t t-foreach="sector" t-as="sector_id">
                                   <option class="sortMe" t-att-value="sector_id.id">
                                       <t t-esc="sector_id.name" />
                                   </option>
-                              </t>
+                              </t> -->
                           </select>
                       </div>
                   </div>

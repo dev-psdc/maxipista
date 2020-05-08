@@ -37,3 +37,35 @@ class AuthSignup(AuthSignupHome):
             values['lang'] = lang
         self._signup_with_values(qcontext.get('token'), values)
         request.env.cr.commit()
+
+
+class FilterData(http.Controller):
+
+    @http.route(['/booking/filterdata'], type='json', auth="public", methods=['POST'], website=True)
+    def filterdata(self, **post):
+        data = dict()
+        province_id = post.get('province_id', False)
+        if province_id:
+            districts = request.env['neonety.district'].sudo().search([('province_id', '=', int(province_id))])
+            dists = list()
+            for district in districts:
+                dists.append({district.id: district.name})
+            data['districts'] = dists
+
+        district_id = post.get('district_id', False)
+        if district_id:
+            sectors = request.env['neonety.sector'].sudo().search([('district_id', '=', int(district_id))])
+            sectors_lst = list()
+            for sector in sectors:
+                sectors_lst.append({sector.id: sector.name})
+            data['sectors'] = sectors_lst
+
+        sector_id = post.get('sector_id', False)
+        if sector_id:
+            regions = request.env['neonety.region'].sudo().search([('sector_id', '=', int(sector_id))])
+            region_lst = list()
+            for region in regions:
+                region_lst.append({region.id: region.name})
+            data['regions'] = region_lst
+
+        return data

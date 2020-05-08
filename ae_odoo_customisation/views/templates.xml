@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="website_sale_product_inherit" inherit_id="web.assets_frontend" name="Website Sale frontend assets">
+            <xpath expr="script[last()]" position="after">
+                <script type="text/javascript" src="/ae_odoo_customisation/static/src/js/filter_country_state.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -182,8 +182,8 @@ class BookingReservation(http.Controller):
         product_id = post.get('product_id', False)
         product_obj = request.env["product.template"].browse(product_id);
         slot_plans = ast.literal_eval(slot_plans)
-        country = request.env['res.country'].sudo().search([])
-        province = request.env['neonety.province'].sudo().search([])
+        country_id = request.env['res.country'].sudo().search([('name', '=', 'Panama')], limit=1)
+        province = request.env['neonety.province'].sudo().search([('country_id', '=', country_id.id)])
         district = request.env['neonety.district'].sudo().search([])
         sector = request.env['neonety.sector'].sudo().search([])
         region = request.env['neonety.region'].sudo().search([])
@@ -192,7 +192,7 @@ class BookingReservation(http.Controller):
             'd_plans': slot_plans,
             'current_date': sel_date,
             'product': product_obj,
-            'country': country,
+            'country': country_id,
             'province': province,
             'district': district,
             'sector': sector,

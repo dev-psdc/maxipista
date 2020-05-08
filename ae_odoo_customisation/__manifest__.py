@@ -12,9 +12,9 @@ Customisation for odoo
 1. Add fields in signup form
 2. Country-State-District Validations
 """,
-    'depends': ['auth_signup', 'website_sale'],
+    'depends': ['auth_signup', 'website_sale', 'neonety', 'website_booking_system'],
     'data': [
-        # 'views/templates.xml',
+        'views/templates.xml',
         'views/auth_signup_templates.xml',
     ],
     'installable': True,
