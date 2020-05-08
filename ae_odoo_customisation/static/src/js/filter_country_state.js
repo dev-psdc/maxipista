@@ -21,7 +21,7 @@ $(document).ready(function() {
                     $('select#id_district').html(options);
                 }
                 if (result && result.regions) {
-                    var options = '<option value=""> -- Seleccione Distrito -- </option>';
+                    var options = '<option value=""> -- Seleccione Región -- </option>';
                     _.each(result.regions, function(region) {
                         var id = Object.keys(region)[0];
                         var name = region[id];
