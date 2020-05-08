@@ -41,29 +41,17 @@
 			<field name='name'>Panamá Oeste</field>
 			<field name='code'>10</field>
 		</record>
-		<record model='neonety.province'   id='neonety.province_11'>
-			<field name='name'>Panamá San Miguelito</field>
-			<field name='code'>11</field>
-		</record>
-		<record model='neonety.province'   id='neonety.province_12'>
-			<field name='name'>Panamá Norte</field>
-			<field name='code'>12</field>
-		</record>
-		<record model='neonety.province'   id='neonety.province_13'>
-			<field name='name'>Panamá Este</field>
-			<field name='code'>13</field>
-		</record>
 		<record model='neonety.province'   id='neonety.province_14'>
 			<field name='name'>Emberá-Wounaan</field>
-			<field name='code'>14</field>
+			<field name='code'>11</field>
 		</record>
 		<record model='neonety.province'   id='neonety.province_15'>
 			<field name='name'>Guna Yala</field>
-			<field name='code'>15</field>
+			<field name='code'>12</field>
 		</record>
 		<record model='neonety.province'   id='neonety.province_16'>
 			<field name='name'>Ngäbe-Buglé</field>
-			<field name='code'>16</field>
+			<field name='code'>13</field>
 		</record>
 		<record model='neonety.district'   id='neonety.district_1'>
 			<field name='name'>Almirante</field>
@@ -3901,66 +3889,82 @@
 		<record model='neonety.region'   id='neonety.region_1'>
 			<field name='name'>Bocas del Toro</field>
 			<field name='code'>1</field>
+			<field name='province_id'>2</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_2'>
 			<field name='name'>Coclé</field>
 			<field name='code'>2</field>
+			<field name='province_id'>2</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_3'>
 			<field name='name'>Colón</field>
 			<field name='code'>3</field>
+			<field name='province_id'>3</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_4'>
 			<field name='name'>Chiriquí</field>
 			<field name='code'>4</field>
+			<field name='province_id'>3</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_5'>
 			<field name='name'>Darién</field>
 			<field name='code'>5</field>
+			<field name='province_id'>5</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_6'>
 			<field name='name'>Herrera</field>
 			<field name='code'>6</field>
+			<field name='province_id'>6</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_7'>
 			<field name='name'>Los Santos</field>
 			<field name='code'>7</field>
+			<field name='province_id'>7</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_8'>
 			<field name='name'>Panamá Centro</field>
 			<field name='code'>8</field>
+			<field name='province_id'>8</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_9'>
 			<field name='name'>Veraguas</field>
 			<field name='code'>9</field>
+			<field name='province_id'>9</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_10'>
 			<field name='name'>Panamá Oeste</field>
 			<field name='code'>10</field>
+			<field name='province_id'>9</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_11'>
 			<field name='name'>Panamá San Miguelito</field>
 			<field name='code'>11</field>
+			<field name='province_id'>8</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_12'>
 			<field name='name'>Panamá Norte</field>
 			<field name='code'>12</field>
+			<field name='province_id'>8</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_13'>
 			<field name='name'>Panamá Este</field>
 			<field name='code'>13</field>
+			<field name='province_id'>8</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_14'>
 			<field name='name'>Emberá-Wounaan</field>
 			<field name='code'>14</field>
+			<field name='province_id'>11</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_15'>
 			<field name='name'>Guna Yala</field>
 			<field name='code'>15</field>
+			<field name='province_id'>12</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_16'>
 			<field name='name'>Ngäbe-Buglé</field>
 			<field name='code'>16</field>
+			<field name='province_id'>13</field>
 		</record>
 	</data>
 </odoo>
