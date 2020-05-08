@@ -3889,7 +3889,7 @@
 		<record model='neonety.region'   id='neonety.region_1'>
 			<field name='name'>Bocas del Toro</field>
 			<field name='code'>1</field>
-			<field name='province_id'>2</field>
+			<field name='province_id'>1</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_2'>
 			<field name='name'>Coclé</field>
@@ -3904,7 +3904,7 @@
 		<record model='neonety.region'   id='neonety.region_4'>
 			<field name='name'>Chiriquí</field>
 			<field name='code'>4</field>
-			<field name='province_id'>3</field>
+			<field name='province_id'>4</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_5'>
 			<field name='name'>Darién</field>
@@ -3934,7 +3934,7 @@
 		<record model='neonety.region'   id='neonety.region_10'>
 			<field name='name'>Panamá Oeste</field>
 			<field name='code'>10</field>
-			<field name='province_id'>9</field>
+			<field name='province_id'>10</field>
 		</record>
 		<record model='neonety.region'   id='neonety.region_11'>
 			<field name='name'>Panamá San Miguelito</field>
