@@ -89,6 +89,7 @@ class NeonetyRegion(models.Model):
 	code = fields.Char(string='Código', size=3, required=True)
 	name = fields.Char(string='Nombre', size=255, required=True)
 	country_id = fields.Many2one('res.country', string='País', required=False, compute='_get_country_id', store=True, ondelete='cascade')
+	province_id = fields.Many2one('neonety.province', string='Provincia')
 
 
 class NeonetyPartner(models.Model):
